@@ -6,6 +6,5 @@ public class Division
     {
        int res = a/b; 
         System.out.println("Division of two Number= "+res);
-       //new Display().disp(sum);
     }    
 }

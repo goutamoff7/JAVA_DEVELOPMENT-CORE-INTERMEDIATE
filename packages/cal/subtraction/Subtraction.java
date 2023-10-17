@@ -6,6 +6,5 @@ public class Subtraction
     {
        int res = a-b; 
         System.out.println("Subtracton of two Number= "+res);
-       //new Display().disp(sum);
     } 
 }

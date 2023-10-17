@@ -6,6 +6,5 @@ public class Addition
     {
        int res = a+b; 
         System.out.println("Addition of two Number="+res);
-       //new Display().disp(sum);
     } 
 }
