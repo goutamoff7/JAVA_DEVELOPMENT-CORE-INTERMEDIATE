@@ -1,5 +1,6 @@
 
 class Animal {
+
 	public static void run() {
 		System.out.println("Animal can run");
 	}
@@ -65,13 +66,17 @@ public class InheritanceOverridingRules_RunTimePolymorphism {
 	public static void main(String[] args) {
 		Tiger t = new Tiger(); // Child class reference manages child class object
 		Animal a = new Tiger(); // Parent class reference manages child class object
-
 		a.run();
 		t.run();
 		a.eat();
 		t.eat();
-		// a.age();//specialized method of child class can't call with parent class
+		// a.age();//specialized method of child class can't call using parent class
 		// reference variable
+		((Tiger) a).age();/*
+							 * specialized method of child class can be accessed
+							 * using Parent class reference but the parent class reference
+							 * should be downcast to Child class
+							 */
 		t.age();
 		a.age(5);
 		t.age(5);
@@ -83,5 +88,9 @@ public class InheritanceOverridingRules_RunTimePolymorphism {
 		a.shelter();
 		t.shelter(); // Cannot override the super class final method so
 		// super class method has been invoked
+	}
+
+	private static Tiger Tiger(Animal a) {
+		return null;
 	}
 }
