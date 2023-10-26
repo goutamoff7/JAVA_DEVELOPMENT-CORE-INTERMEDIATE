@@ -19,7 +19,7 @@ public class SingleInheritance_AreaVolume {
 		Child c = new Child();
 		int area = c.area(5, 6);
 		int volume = c.volume(3);
-		System.out.println("Area of the Square = " + area + " Sqr mtr");
-		System.out.println("Volume of the Square = " + volume + " Cubic mtr");
+		System.out.println("Area of the Rectangle = " + area + " Sqr mtr");
+		System.out.println("Volume of the Rectangle = " + volume + " Cubic mtr");
 	}
 }

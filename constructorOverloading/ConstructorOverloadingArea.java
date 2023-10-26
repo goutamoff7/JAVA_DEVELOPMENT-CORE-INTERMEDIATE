@@ -1,7 +1,7 @@
 public class ConstructorOverloadingArea {
 	ConstructorOverloadingArea(int len,int brdth)
 	{
-		System.out.println("Area of Square = "+len*brdth+" Sqr mtr");
+		System.out.println("Area of Rectangle = "+len*brdth+" Sqr mtr");
 	}
 	ConstructorOverloadingArea(int rad)
 	{
