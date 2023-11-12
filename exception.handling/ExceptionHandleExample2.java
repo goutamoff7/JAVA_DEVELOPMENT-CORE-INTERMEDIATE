@@ -1,4 +1,4 @@
-import javafx.scene.paint.Stop;
+
 
 class ExceptionHandleExample2
 {
@@ -6,9 +6,9 @@ class ExceptionHandleExample2
     {
         try
         {
-            //int a=10;
-            //int b=a/0;
-            //System.out.println("The value of c is"+b);
+            // int a=10;
+            // int b=a/0;
+            // System.out.println("The value of c is"+b);
             int ab[]=new int[]{2,4,6,7,8};
             System.out.println("The sixth value of the array is"+ab[5]);
         }

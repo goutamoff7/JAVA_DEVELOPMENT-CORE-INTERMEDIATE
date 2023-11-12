@@ -6,7 +6,8 @@ public class ExceptionHandleExample5
         {  
             int b=20/0;
             
-        } catch (Exception e) 
+        } 
+        catch (Exception e) 
         {
             String s="Ram";
             System.out.println(s.charAt(3));
