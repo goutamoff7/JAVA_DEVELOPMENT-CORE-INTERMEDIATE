@@ -17,10 +17,9 @@ import java.util.ArrayList;
 class Problem2951 {
 	public List<Integer> findPeaks(int[] mountain) {
 		List<Integer> res = new ArrayList<Integer>();
-		int n = 0;
 		for (int i = 1; i < mountain.length - 1; i++) {
 			if (mountain[i] > mountain[i - 1] && mountain[i] > mountain[i + 1])
-				res.add(n++, i);
+				res.add(i);
 		}
 		return res;
 	}
