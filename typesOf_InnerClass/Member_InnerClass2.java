@@ -46,7 +46,7 @@ public class Member_InnerClass2 {
 		/*
 		 * Syntax for Inner Class object creation (non-static member class):-
 		 * <OUTER CLASS NAME>'.'<INNER CLASS NAME> <INNER CLASS OBJECT NAME> =
-		 * <OUTER CLASS OBJECT NAME>'.'"new" <INNER CLASS NAME>
+		 * <OUTER CLASS OBJECT NAME>'.'"new" <INNER CLASS NAME>"();"
 		 */
 		Person.Address ob1 = p1.new Address();
 		p1.getData(ob1);
