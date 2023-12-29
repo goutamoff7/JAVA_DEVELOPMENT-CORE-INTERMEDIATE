@@ -33,10 +33,10 @@ public class Problem2744 {
 	public int maximumNumberOfStringPairs(String[] words) {
 		int max = 0;
 		for (int i = 0; i < words.length - 1; i++) {
-			for (int j = i + 1; j < words.length; j++) {
-				StringBuffer sb = new StringBuffer(words[j]);
-				sb.reverse();
-				if (words[i].equals(String.valueOf(sb)))
+			StringBuffer sb = new StringBuffer(words[i]);
+			sb.reverse();
+			for (int j = i + 1; j < words.length; j++) {					
+				if (String.valueOf(sb).equals(words[j]))
 					max++;
 			}
 		}
