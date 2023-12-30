@@ -1,22 +1,28 @@
 interface Computer {
 	void compileCode();
-	default void runCode()
-	{
+
+	default void runCode() {
 		System.out.println("Code is Running");
 	}
-	static void testingCode()
-	{
+
+	static void testingCode() {
 		System.out.println("Testing the code before Deployment");
-	}	
+	}
 }
 
 class Laptop implements Computer {
 	public void compileCode() {
 		System.out.println("Laptop compiles code");
 	}
-	public void runCode() //It is optional to override a default method of an interface
+
+	public void runCode() // It is optional to override a default method of an interface
 	{
 		System.out.println("Running code in Laptop");
+	}
+
+	static void testingCode() // act as specialized static method of Laptop class
+	{
+		System.out.println("Testing the code before Deployment Laptop");
 	}
 }
 
@@ -26,9 +32,8 @@ class Desktop implements Computer {
 	}
 }
 
-class Tablet implements Computer{
-	public void compileCode()
-	{
+class Tablet implements Computer {
+	public void compileCode() {
 		System.out.println("Tablet Testing the codes");
 	}
 }
@@ -43,8 +48,7 @@ class Developer {
 	}
 }
 
-public class Java8Features_Interface
- {
+public class Java8Features_Interface {
 	public static void main(String[] args) {
 		Laptop l = new Laptop();
 		Desktop d = new Desktop();
@@ -54,7 +58,10 @@ public class Java8Features_Interface
 		Developer de2 = new Developer();
 		de2.buildApp(d);
 		Developer de3 = new Developer();
-		de3.buildApp(t); 
+		de3.buildApp(t);
+
+		Computer.testingCode();
+		Laptop.testingCode();
 
 	}
 }
