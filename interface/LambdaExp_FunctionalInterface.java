@@ -1,11 +1,14 @@
+@FunctionalInterface
 interface A {
 	void m();
 }
 
+@FunctionalInterface
 interface B {
 	void m(int a);
 }
 
+@FunctionalInterface
 interface C {
 	void m(int a, int b);
 }
