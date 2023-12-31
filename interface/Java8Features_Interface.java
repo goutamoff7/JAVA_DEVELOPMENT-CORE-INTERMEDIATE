@@ -28,7 +28,7 @@ class Laptop implements Computer {
 
 class Desktop implements Computer {
 	public void compileCode() {
-		System.out.println("Computer compiles code faster");
+		System.out.println("Desktop compiles code faster");
 	}
 }
 
