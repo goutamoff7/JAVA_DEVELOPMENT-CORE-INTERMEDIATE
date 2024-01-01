@@ -13,7 +13,7 @@ interface C {
 	void m(int a, int b);
 }
 /*
- * If a interface has only one method (called Functional Interface)
+ * If a interface has only one abstract method (called Functional Interface)
  * and a class which implements those method only once throughout the project
  * then there
  * is not a requirement for making a separate class we can use Lambda Expression
