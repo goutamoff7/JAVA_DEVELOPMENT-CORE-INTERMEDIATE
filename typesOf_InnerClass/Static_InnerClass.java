@@ -5,7 +5,7 @@ class OuterClass { // Outer class can't be declared as static
 
 	static class InnerClass { // For static Inner Class outer class object
 								// is not needed, only outer class name is required
-		void method() {
+		void method() { // to invoke its method
 			System.out.println("Inner Class method");
 		}
 
