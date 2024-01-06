@@ -80,7 +80,7 @@ public class Problem500 {
 	public static void main(String[] args) {
 		String words[] = { "Hello", "Alaska", "Dad", "Peace" };
 		// String words[] = {"adsdf","sfd"};
-		String res[] = new Problem500Incomplete().findWords(words);
+		String res[] = new Problem500().findWords(words);
 		System.out.println(new ArrayList<>(Arrays.asList(res)));
 	}
 
