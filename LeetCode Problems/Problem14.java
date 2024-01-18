@@ -35,10 +35,12 @@ class Problem14 {
 	}
 
 	public static void main(String[] args) {
-		// String strs[] = { "flower", "flow", "flight" };
+		String strs[] = { "flower", "flow", "flight" };
 		// String strs[] = { "dogcar", "racecar", "car" };
 		// String strs[] = {"c","acc","ccc"};
 		// String strs[] = { "a" };
+		// String strs[] = { "a", "ab", "abc" };
+		// String strs[] = { "flower" };
 		System.out.println(new Problem14().longestCommonPrefix(strs));
 	}
 }
