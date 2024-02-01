@@ -25,7 +25,17 @@ class Collection_PriorityQueueInt {
 		pq2.add(150);// Duplicate value is allowed
 		System.out.println(pq2);
 		System.out.println(pq1.contains(100)); // searching the vlaue in the Priority Queue,
-		System.out.println(pq1.contains(200));// if contains then return true elde false
+		System.out.println(pq1.contains(200));// if contains then return true else false
 
+		System.out.println("Size of the Priority Queue 2 : " + pq2.size());
+		pq2.remove(25); // remove first 25 of pq2 only
+		// pq2.remove(); //this method not exit in PriorityQueue
+		System.out.println(pq1);
+		System.out.println(pq2);
+		pq2.removeAll(pq1); // remove all the ad1 elements from ad2.
+		System.out.println(pq2);
+		pq2.clear(); // delete all element of al2
+		System.out.println(pq1);
+		System.out.println(pq2);
 	}
 }

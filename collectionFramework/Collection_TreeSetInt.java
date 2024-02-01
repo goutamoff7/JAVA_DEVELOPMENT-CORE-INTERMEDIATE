@@ -49,8 +49,17 @@ class Collection_TreeSetInt {
 
 		System.out.println(ts1.descendingSet()); // descending order not reflected to original TreeSet
 		System.out.println(ts1);
+		System.out.println(ts2);
 
-		ts1.clear(); // removing all the elements permanently from the TreeSet
+		System.out.println("Size of the Priority Queue 2 : " + ts2.size());
+		ts2.remove(25); // remove first 25 of pq2 only
+		// ts2.remove(); //this method not exit in TreeSet
 		System.out.println(ts1);
+		System.out.println(ts2);
+		ts2.removeAll(ts1); // remove all the ad1 elements from ad2.
+		System.out.println(ts2);
+		ts2.clear(); // delete all element of al2
+		System.out.println(ts1);
+		System.out.println(ts2);
 	}
 }

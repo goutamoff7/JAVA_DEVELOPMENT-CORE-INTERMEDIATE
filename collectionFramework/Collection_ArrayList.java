@@ -17,5 +17,19 @@ class Collection_ArrayList {
 		System.out.println(al2);
 		System.out.println(al1.get(5)); // getting vlaue of 5th index of al1
 		System.out.println(al2.get(7)); // getting vlaue of 7th index of al2
+
+		System.out.println(al2.contains(100)); // searching the vlaue in the ArrayList,
+		System.out.println(al2.contains(200));// if contains then return true else false
+
+		System.out.println("Size of the ArrayList 2 : " + al2.size());
+		al2.remove(2); // remove 2nd index only
+		// al2.remove(); //this method not exit in ArrayList
+		System.out.println(al1);
+		System.out.println(al2);
+		al2.removeAll(al1); // remove all the ad1 elements from ad2.
+		System.out.println(al2);
+		al2.clear(); // delete all element of al2
+		System.out.println(al1);
+		System.out.println(al2);
 	}
 }

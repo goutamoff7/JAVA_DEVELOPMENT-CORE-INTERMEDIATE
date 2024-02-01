@@ -22,7 +22,7 @@ class Collection_PriorityQueueString {
 		pq2.add("Ram");// Duplicate value is allowed
 		System.out.println(pq2);
 		System.out.println(pq1.contains("Ram")); // searching the vlaue in the Priority Queue,
-		System.out.println(pq1.contains("Hanuman"));// if contains then return true elde false
+		System.out.println(pq1.contains("Hanuman"));// if contains then return true else false
 
 	}
 }

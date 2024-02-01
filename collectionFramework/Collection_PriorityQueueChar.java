@@ -23,7 +23,7 @@ class Collection_PriorityQueueChar {
 		pq2.add('D');// Duplicate value is allowed
 		System.out.println(pq2);
 		System.out.println(pq1.contains('A')); // searching the vlaue in the Priority Queue,
-		System.out.println(pq1.contains('M'));// if contains then return true elde false
+		System.out.println(pq1.contains('M'));// if contains then return true else false
 
 	}
 }

@@ -23,7 +23,7 @@ class Collection_PriorityQueueDouble {
 		pq2.add(150.9);// Duplicate value is allowed
 		System.out.println(pq2);
 		System.out.println(pq1.contains(100.5)); // searching the vlaue in the Priority Queue,
-		System.out.println(pq1.contains(200));// if contains then return true elde false
+		System.out.println(pq1.contains(200));// if contains then return true else false
 
 	}
 }
