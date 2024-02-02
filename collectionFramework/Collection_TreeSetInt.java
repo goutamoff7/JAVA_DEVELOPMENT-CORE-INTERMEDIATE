@@ -51,14 +51,14 @@ class Collection_TreeSetInt {
 		System.out.println(ts1);
 		System.out.println(ts2);
 
-		System.out.println("Size of the Priority Queue 2 : " + ts2.size());
-		ts2.remove(25); // remove first 25 of pq2 only
+		System.out.println("Size of the TreeSet 2 : " + ts2.size());
+		ts2.remove(25); // remove 25 of ts2 only
 		// ts2.remove(); //this method not exit in TreeSet
 		System.out.println(ts1);
 		System.out.println(ts2);
-		ts2.removeAll(ts1); // remove all the ad1 elements from ad2.
+		ts2.removeAll(ts1); // remove all the ts1 elements from ts2.
 		System.out.println(ts2);
-		ts2.clear(); // delete all element of al2
+		ts2.clear(); // delete all element of ts2
 		System.out.println(ts1);
 		System.out.println(ts2);
 	}

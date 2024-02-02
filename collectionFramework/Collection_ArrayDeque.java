@@ -23,13 +23,13 @@ class Collection_ArrayDeque {
 		System.out.println(ad1.contains(100)); // searching the vlaue in the Deque,
 		System.out.println(ad1.contains(200));// if contains then return true else false
 
-		System.out.println("Size of the ArrayList : " + ad2.size());
+		System.out.println("Size of the ArrayDeque : " + ad2.size());
 		ad2.remove(100); // remove first 100 only
 		ad2.remove(); // remove first element only
 		ad2.removeAll(ad1); // remove all the ad1 elements from ad2.
 		System.out.println(ad1);
 		System.out.println(ad2);
-		ad2.clear(); // delete all element
+		ad2.clear(); // delete all element of ad2
 		System.out.println(ad2);
 	}
 }

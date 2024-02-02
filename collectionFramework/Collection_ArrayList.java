@@ -26,7 +26,7 @@ class Collection_ArrayList {
 		// al2.remove(); //this method not exit in ArrayList
 		System.out.println(al1);
 		System.out.println(al2);
-		al2.removeAll(al1); // remove all the ad1 elements from ad2.
+		al2.removeAll(al1); // remove all the al1 elements from al2.
 		System.out.println(al2);
 		al2.clear(); // delete all element of al2
 		System.out.println(al1);
