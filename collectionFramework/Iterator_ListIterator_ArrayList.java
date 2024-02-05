@@ -31,17 +31,39 @@ class Iterator_ListIterator_ArrayList {
 			System.out.println(o);
 		}
 		System.out.println("---------------------------------------");
-		ListIterator litr = al.listIterator(al.size());
+
+		ListIterator litrfwd = al.listIterator();
+		// ListIterator(extends Iterator inteface) is applicable for only
+		// ArrayList and LinkedList
+		// listIterator() method acts as a cursor starts starts before the first
+		// position
+		// of any collection
+		while (litrfwd.hasNext()) { // hasPrevious() methods returns true if the
+			// previous element exists.
+			System.out.print("Index : " + litrfwd.nextIndex() + " = ");
+			Object o = litrfwd.next(); // Previous() method iterate the Previous
+			// element of cursor and return that object
+			System.out.println(o);
+		}
+
+		System.out.println("---------------------------------------");
+
+		ListIterator litrbwd = al.listIterator(al.size());
 		// ListIterator(extends Iterator inteface) is applicable for only
 		// ArrayList and LinkedList
 		// listIterator() method acts as a cursor starts after the last position
 		// of any collection
-		while (litr.hasPrevious()) { // hasPrevious() methods returns true if the
+		System.out.println(al);
+		while (litrbwd.hasPrevious()) { // hasPrevious() methods returns true if the
 			// previous element exists.
-			Object o = litr.previous(); // Previous() method iterate the Previous
+			System.out.print("Index : " + litrbwd.previousIndex() + " = ");
+			Object o = litrbwd.previous(); // Previous() method iterate the Previous
 			// element of cursor and return that object
 			System.out.println(o);
+			litrbwd.remove();
+			System.out.println(al);
 		}
+		System.out.println("After Removing all the elements : " + al);
 
 	}
 }
