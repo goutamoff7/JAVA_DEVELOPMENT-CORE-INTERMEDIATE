@@ -22,15 +22,15 @@ class Collection_ArrayList {
 
 		System.out.println("isEmpty : " + al2.isEmpty());
 
-		System.out.println("toArray : " + al2.toArray());
+		System.out.println("toArray : " + al2.toArray()); // return Object[]
 		System.out.println("toString : " + al2.toString());
 
 		al1.set(3, 200); // at index 3 current vlaue will be replaced with 200
 
-		System.out.println(al1.get(5)); // getting vlaue of 5th index of al1
-		System.out.println(al2.get(8)); // getting vlaue of 7th index of al2
+		System.out.println(al1.get(5)); // getting value of 5th index of al1
+		System.out.println(al2.get(8)); // getting value of 8th index of al2
 
-		System.out.println(al2.contains(100)); // searching the vlaue in the ArrayList,
+		System.out.println(al2.contains(100)); // searching the value in the ArrayList,
 		System.out.println(al2.contains(200));// if contains then return true else false
 
 		System.out.println("Size of the ArrayList 2 : " + al2.size());
@@ -38,8 +38,8 @@ class Collection_ArrayList {
 		// al2.remove(); //this method not exit in ArrayList
 		System.out.println(al1);
 		System.out.println(al2);
-		System.out.println("After retainAll : " + al2.retainAll(al1)); // keep those elements of al2 which matches al1
-																		// otherwise removes from al2
+		System.out.println("After retainAll : " + al2.retainAll(al1));
+		// keep those elements of al2 which matches al1 otherwise removes from al2
 		System.out.println(al1);
 		System.out.println(al2);
 		al2.removeAll(al1); // remove all the al1 elements from al2.
