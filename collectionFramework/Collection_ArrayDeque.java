@@ -20,12 +20,61 @@ class Collection_ArrayDeque {
 		ad2.offerFirst(125); // offering value at first position, it may be added or can't be added.
 		ad2.offerLast(634); // offering value at last position, it may be added or can't be added.
 		System.out.println(ad2);
+
+		System.out.println("getFirst of ad2 : " + ad2.getFirst()); // Returns the first element of deque.
+		System.out.println("getLast of ad2 : " + ad2.getLast()); // Returns the last element of deque.
+
+		System.out.println("Head Element of ad2 element() method : " + ad2.element());
+		// Retrieves, but does not remove, the head of the queue represented by this
+		// deque.
+
+		System.out.println("Head Element of ad2 peek() method : " + ad2.peek());
+		// peak() : Retrieves, but does not remove, the head of the queue represented by
+		// this deque, or returns null if this deque is empty.
+		System.out.println("Head Element of ad2 peekFirst() method : " + ad2.peekFirst());
+		// Retrieves, but does not remove, the first element of this deque, or returns
+		// null if this deque is empty.
+		System.out.println("Last Element of ad2 peekLast() method : " + ad2.peekLast());
+		// Retrieves, but does not remove, the last element of this deque, or returns
+		// null if this deque is empty.
+		System.out.println(ad2.poll()); // Retrieves and removes the head of the queue represented by this deque (in
+		// other words, the first element of this deque), or returns null if this deque
+		// is empty.
+		System.out.println("After poll() method called : " + ad2);
+
+		System.out.println("Head Element of ad2 pollFirst() method : " + ad2.pollFirst());
+		// Retrieves and removes the first element of this deque, or returns null if
+		// this deque is empty.
+		System.out.println("Last Element of ad2 pollLast() method : " + ad2.pollLast());
+		// Retrieves and removes the last element of this deque, or returns null if this
+		// deque is empty.
+
+		ad2.pop(); // removes the first element from the stack represented by this deque.
+		System.out.println("After pop() method called : " + ad2);
+		ad2.push(58); // Pushes 58 at first position of the stack represented by thisdeque.
+		System.out.println("After 58 is pushed :" + ad2);
+		System.out.println(ad2);
 		System.out.println(ad1.contains(100)); // searching the vlaue in the Deque,
 		System.out.println(ad1.contains(200));// if contains then return true else false
 
+		System.out.println("isEmpty : " + ad2.isEmpty());
+		System.out.println("toArray : " + ad2.toArray()); // return Object[]
+		System.out.println("toString : " + ad2.toString());
+
 		System.out.println("Size of the ArrayDeque : " + ad2.size());
-		System.out.println(ad2.remove(100)); // remove first 100 only
+
 		System.out.println(ad2.remove()); // remove and return first element only
+		System.out.println(ad2.remove(100)); // Removes a single instance of the specified element from this deque.
+		System.out.println("removeFirst() method called : " + ad2.removeFirst());
+		// Removes and returns the first element from this list.
+		System.out.println("removeLast() method called : " + ad2.removeLast());
+		// Retrieves and removes the last element of this deque.
+		System.out.println("removeFirstOccurrence(20) method called of ll2 : " + ad2.removeFirstOccurrence(20));
+		// Removes the first occurrence of the specified element in this deque (when
+		// traversing the list from head to tail).
+		System.out.println("removeLastOccurrence(20) method called : " + ad2.removeLastOccurrence(20));
+		// Removes the last occurrence of the specified element in this deque (when
+		// traversing the list from head to tail).
 		ad2.removeAll(ad1); // remove all the ad1 elements from ad2.
 		System.out.println(ad1);
 		System.out.println(ad2);

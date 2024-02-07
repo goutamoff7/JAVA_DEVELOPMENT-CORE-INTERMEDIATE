@@ -90,6 +90,8 @@ class Collection_LinkedList {
 
 		System.out.println("removeFirst() method called : " + ll2.removeFirst());
 		// Removes and returns the first element from this list.
+		System.out.println("removeLast() method called : " + ll2.removeLast());
+		// Removes and returns the last element from this list.
 		System.out.println("removeFirstOccurrence(20) method called of ll2 : " + ll2.removeFirstOccurrence(20));
 		// Removes the first occurrence of the specified element in this list (when
 		// traversing the list from head to tail).
