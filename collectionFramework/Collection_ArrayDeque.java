@@ -66,15 +66,15 @@ class Collection_ArrayDeque {
 		System.out.println(ad2.remove()); // remove and return first element only
 		System.out.println(ad2.remove(100)); // Removes a single instance of the specified element from this deque.
 		System.out.println("removeFirst() method called : " + ad2.removeFirst());
-		// Removes and returns the first element from this list.
+		// Removes and returns the first element from this deque.
 		System.out.println("removeLast() method called : " + ad2.removeLast());
 		// Retrieves and removes the last element of this deque.
 		System.out.println("removeFirstOccurrence(20) method called of ll2 : " + ad2.removeFirstOccurrence(20));
 		// Removes the first occurrence of the specified element in this deque (when
-		// traversing the list from head to tail).
+		// traversing the deque from head to tail).
 		System.out.println("removeLastOccurrence(20) method called : " + ad2.removeLastOccurrence(20));
 		// Removes the last occurrence of the specified element in this deque (when
-		// traversing the list from head to tail).
+		// traversing the deque from head to tail).
 		ad2.removeAll(ad1); // remove all the ad1 elements from ad2.
 		System.out.println(ad1);
 		System.out.println(ad2);
