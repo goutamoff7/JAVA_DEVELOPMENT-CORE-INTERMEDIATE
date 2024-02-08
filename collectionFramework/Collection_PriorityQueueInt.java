@@ -27,15 +27,27 @@ class Collection_PriorityQueueInt {
 		System.out.println(pq1.contains(100)); // searching the vlaue in the Priority Queue,
 		System.out.println(pq1.contains(200));// if contains then return true else false
 
+		System.out.println("Head Element of pq2 peek() method : " + pq2.peek());
+		// Retrieves, but does not remove, the head of this queue, or returns null if
+		// this queue is empty.
+		System.out.println(pq2.poll());
+		// Retrieves and removes the head of this queue, or returns null if this queue
+		// is empty.
+		System.out.println("After poll() method called : " + pq2);
 		System.out.println("Size of the PriorityQueue 2 : " + pq2.size());
-		pq2.remove(25); // remove first 25 of pq2 only
-		// pq2.remove(); //this method not exit in PriorityQueue
+		pq2.remove(25);
+		// Removes a single instance of the specified element from this queue, if it is
+		// present.
+		pq2.remove(); // same as poll(), throws exception if the queue is empty
 		System.out.println(pq1);
 		System.out.println(pq2);
+
 		pq2.removeAll(pq1); // remove all the pq1 elements from pq2.
 		System.out.println(pq2);
 		pq2.clear(); // delete all element of pq2
 		System.out.println(pq1);
 		System.out.println(pq2);
+		PriorityQueue pq3 = new PriorityQueue(pq1);
+		System.out.println(pq3);
 	}
 }
