@@ -3,6 +3,7 @@ import java.util.*;
 class Collection_LinkedHashSet {
 	public static void main(String[] args) {
 		LinkedHashSet lhs1 = new LinkedHashSet();
+		lhs1.add(null); // null insertion allowed
 		lhs1.add(100); // adding integer in lhs1
 		lhs1.add(20); // adding integer in lhs1
 		lhs1.add(13.5f); // adding float in lhs1
@@ -19,9 +20,10 @@ class Collection_LinkedHashSet {
 		System.out.println(lhs2.contains(100)); // searching the vlaue in the LinkedHashSet,
 		System.out.println(lhs2.contains(200));// if contains then return true else false
 
+		System.out.println("isEmpty : " + lhs2.isEmpty());
 		System.out.println("Size of the LinkedHashSet 2 : " + lhs2.size());
-		lhs2.remove(25.6); // remove 25 of lhs2 only
-		// ts2.remove(); //this method not exit in TreeSet
+		lhs2.remove(25.6); // remove 25.6 of lhs2 only
+		// lhs2.remove(); //this method not exit in TreeSet
 		System.out.println(lhs1);
 		System.out.println(lhs2);
 		lhs1.removeAll(lhs2); // remove all the lhs2 elements from lhs1.

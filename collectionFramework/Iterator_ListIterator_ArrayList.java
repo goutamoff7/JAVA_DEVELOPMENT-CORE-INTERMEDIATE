@@ -24,12 +24,17 @@ class Iterator_ListIterator_ArrayList {
 		Iterator itr = al.iterator();
 		// iterator() method acts as a cursor starts before the first position
 		// of any collection
+		System.out.println(al);
+		itr.next();
+		itr.remove(); // remove the last element returned by next() method
+		System.out.println("After remove() method called : " + al);
 		while (itr.hasNext()) { // hasNext() methods returns true if the next
 			// element of cursor exits.
 			Object o = itr.next(); // next() method iterate the next element
 			// of cursor and return that object
 			System.out.println(o);
 		}
+
 		System.out.println("---------------------------------------");
 
 		ListIterator litrfwd = al.listIterator();
@@ -38,6 +43,10 @@ class Iterator_ListIterator_ArrayList {
 		// listIterator() method acts as a cursor starts starts before the first
 		// position
 		// of any collection
+		System.out.println(al);
+		litrfwd.add(100); // adding 100 at the begining of the list, moves the cursor forward
+		System.out.println("After add(100) method called : " + al);
+		litrfwd.previous(); // taking the cursor backward, starting position of the list
 		while (litrfwd.hasNext()) { // hasPrevious() methods returns true if the
 			// previous element exists.
 			System.out.print("Index : " + litrfwd.nextIndex() + " = ");
@@ -64,6 +73,10 @@ class Iterator_ListIterator_ArrayList {
 			System.out.println(al);
 		}
 		System.out.println("After Removing all the elements : " + al);
-
+		litrbwd.add(20);
+		System.out.println("After add(20) : " + al);
+		litrbwd.previous();
+		litrbwd.set(25);
+		System.out.println("After set(25) : " + al);
 	}
 }
