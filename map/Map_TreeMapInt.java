@@ -7,10 +7,10 @@ class Map_TreeMapInt {
 		// all the key is integer.
 		tm1.put(1, 100); // puting integer as value in hm1
 		tm1.put(2, 20); // puting integer as value in hm1
-		// hm1.put(3, 13.5f); // puting float as value in hm1
+		// tm1.put(3, 13.5f); // puting float as value in hm1
 		tm1.put(5, 25.6); // puting double as value in hm1
 		tm1.put(6, 'G'); // puting character as value in hm1
-		tm1.put(8, "Goutam Dam"); // puting String as value in hm1
+		tm1.put(8, "Goutam dam"); // puting String as value in hm1
 
 		// tm.put(50.6,100); // puting int as key in tm1, cause runtime exception.
 		// we can put int,float,double,char,String as key in the TreeMap
@@ -66,28 +66,22 @@ class Map_TreeMapInt {
 		System.out.println("In-Order-Traversal Last key : " + tm2.lastKey()); // In-Order-Traversal Last value
 
 		System.out.println(tm1);
-		tm1.remove(150); // Removes the mapping for this key from this TreeMap if present
-		// tm2.remove(); //this method not exit in TreeMap
+		tm1.remove(8); // Removes the mapping for this key from this TreeMap if present
+		// tm2.remove(); //this method not exist in TreeMap
 		System.out.println(tm1);
 
-		System.out.println("descendingKeySet : " + tm1.descendingKeySet()); // descending order not reflected to
-																			// original TreeMap
+		System.out.println("descendingKeySet : " + tm1.descendingKeySet());
 		// Returns a reverse order NavigableSet view of the keys contained in this map.
-		System.out.println("descendingMap : " + tm1.descendingMap());// Returns a reverse order view of the mappings
-																		// contained in this map.
-		System.out.println(tm1);
-		System.out.println(tm2);
+		System.out.println("descendingMap : " + tm1.descendingMap());
+		// Returns a reverse order view of the mappings contained in this map.
 
 		System.out.println("Size of the TreeMap 2 : " + tm2.size());
 
 		tm2.replace(7, 25); // Replaces the entry for the key 7 only
 		System.out.println(tm2);
 		tm2.replace(7, 25, 20); // replace old value=25 to new value=20
-
-		System.out.println(tm1);
 		System.out.println(tm2);
 		tm2.clear(); // delete all element of tm2
-		System.out.println(tm1);
 		System.out.println(tm2);
 	}
 }

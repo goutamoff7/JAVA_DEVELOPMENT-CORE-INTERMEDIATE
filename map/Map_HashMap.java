@@ -15,12 +15,12 @@ class Collection_HashMap {
 		System.out.println("hm1 : " + hm1); // Order of Insertion not preserved
 
 		HashMap hm2 = new HashMap();
-		hm2.put(100, 1); // puting integer as key in hm1
-		hm2.put(20, 2); // puting integer as key in hm1
-		hm2.put(13.5f, 3); // puting float as key in hm1
-		hm2.put(25.6, 4); // puting double as key in hm1
-		hm2.put('G', 5); // puting character as key in hm1
-		hm2.put("Goutam dam", 6); // puting string as key in hm1
+		hm2.put(100, 1); // puting integer as key in hm2
+		hm2.put(20, 2); // puting integer as key in hm2
+		hm2.put(13.5f, 3); // puting float as key in hm2
+		hm2.put(25.6, 4); // puting double as key in hm2
+		hm2.put('G', 5); // puting character as key in hm2
+		hm2.put("Goutam dam", 6); // puting string as key in hm2
 		System.out.println("hm2 : " + hm2);
 		HashMap hm3 = new HashMap();
 
@@ -30,9 +30,11 @@ class Collection_HashMap {
 		hm2.put(20, 8); // duplicate key does not enter into the hashMap
 		hm2.put(7, 6); // but duplicate value can be allowed.
 		hm2.replace(7, 25); // Replaces the entry for the key 7 only
+		
 		System.out.println(hm2);
 		hm2.replace(7, 25, 20); // replace old value=25 to new value=20
 		System.out.println(hm2);
+
 		System.out.println(hm1.get(6)); // getting value of key 6 of hm1
 		System.out.println(hm2.get("Goutam dam")); // getting value of key "Goutam Dam" of hm2
 

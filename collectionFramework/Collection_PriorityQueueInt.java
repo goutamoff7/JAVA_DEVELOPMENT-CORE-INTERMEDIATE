@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Collection_PriorityQueueInt {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		PriorityQueue pq1 = new PriorityQueue();
 		pq1.add(100); // adding int in pq1
 		pq1.add(50); // adding int in pq1
@@ -10,7 +10,7 @@ class Collection_PriorityQueueInt {
 		pq1.add(75); // adding int in pq1
 		pq1.add(125); // adding int in pq1
 		pq1.add(175); // adding int in pq1
-
+		
 		// pq1.add(100.6); // adding double in pq1, cause runtime exception.
 		// we can add int,float,double,char,String value in the Priority queue
 		// homogenously,but hetergenous or mixed up data is not allowed
