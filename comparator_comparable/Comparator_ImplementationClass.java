@@ -50,7 +50,7 @@ public class Comparator_ImplementationClass {
         Student st2 = new Student("Ram",(byte)23,80);
         Student st3 = new Student("Varun",(byte)28,56);
 
-        List<Student> al= new ArrayList();
+        List<Student> al= new ArrayList<>();
         al.add(st1);
         al.add(st2);
         al.add(st3);
@@ -58,12 +58,12 @@ public class Comparator_ImplementationClass {
         //Collections.sort(al);// CE arise, multiple type of data is there in the list, according to which data need to be sort?
 
         MarksSort m = new MarksSort();
-        Collections.sort(al,m); // based on marks elements are sorted
+        Collections.sort(al,m); // based on marks, elements are sorted
         System.out.println("Sorting based on Marks  : \n"+al);        
         
         
         AgeSort a = new AgeSort();
-        Collections.sort(al,a); // based on age elements are sorted
+        Collections.sort(al,a); // based on age, elements are sorted
         System.out.println("Sorting based on Age : \n"+al);  
         
     }
