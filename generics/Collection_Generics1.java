@@ -28,12 +28,12 @@ class Collection_Generics1 {
 		// in this collection except String.
 		// Assuming that the above colection contains only names (String type)
 		String name2[] = new String[al2.size()];
-		name[0] = (String) al2.get(0); // Object type is downcasted to String type
-		name[1] = (String) al2.get(1);
-		name[2] = (String) al2.get(2); // Exception arise as at index 2 data is of i
+		name2[0] = al2.get(0); // Object type is downcasted to String type
+		name2[1] = al2.get(1);
+		name2[2] = al2.get(2); // Exception arise as at index 2 data is of i
 		// java.lang.ClassCastException: class java.lang.Integer cannot be cast to class
 		// java.lang.String
-		for (int i = 0; i < name.length; i++)
-			System.out.println("Name " + i + " : " + name[i]);
+		for (int i = 0; i < name2.length; i++)
+			System.out.println("Name " + i + " : " + name2[i]);
 	}
 }
