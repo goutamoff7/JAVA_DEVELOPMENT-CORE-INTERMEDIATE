@@ -4,7 +4,7 @@ import java.util.Collections;
 class Collections_Methods
 {
     public static void main(String[] args) {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(50);
         al.add(150);
@@ -17,6 +17,9 @@ class Collections_Methods
         Collections.sort(al); // sort the elements of al using sort method (static) of Collections class 
         System.out.println(al);
 
+        System.out.println("Max Element : "+Collections.max(al));
+        System.out.println("Min Element : "+Collections.min(al));
+
         Collections.reverse(al);
         System.out.println(al);
 
@@ -28,9 +31,9 @@ class Collections_Methods
         System.out.println("rotate from 3: "+al);
 
         Collections.shuffle(al);
-        System.out.println("Suffle : "+al);
+        System.out.println("shuffle : "+al);
 
-        ArrayList<String> al2 = new ArrayList();
+        ArrayList<String> al2 = new ArrayList<>();
         al2.add("Ram");
         al2.add("Goutam");
         al2.add("Pw");
