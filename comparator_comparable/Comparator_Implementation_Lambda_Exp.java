@@ -26,7 +26,7 @@ public class Comparator_Implementation_Lambda_Exp {
         Student st2 = new Student("Ram",(byte)23,80);
         Student st3 = new Student("Varun",(byte)28,56);
 
-        List<Student> al= new ArrayList();
+        List<Student> al= new ArrayList<>();
         al.add(st1);
         al.add(st2);
         al.add(st3);

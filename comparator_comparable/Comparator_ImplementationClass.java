@@ -1,13 +1,13 @@
 import java.util.*;
 
-class Student
+class StudentSort
 {
     String name;
     byte age;
     int marks;
     
 
-    Student(String name,byte age,int marks)
+    StudentSort(String name,byte age,int marks)
     {
         this.name=name;
         this.marks=marks;
@@ -20,9 +20,9 @@ class Student
     }
 }
 
-class MarksSort implements Comparator<Student>
+class MarksSort implements Comparator<StudentSort>
 {
-    public int compare( Student a, Student b)
+    public int compare( StudentSort a, StudentSort b)
     {
         if(a.marks>b.marks)  // Sorting based on marks
             return 1; // 1 means Swapping
@@ -31,9 +31,9 @@ class MarksSort implements Comparator<Student>
     }
 }
 
-class AgeSort implements Comparator<Student>
+class AgeSort implements Comparator<StudentSort>
 {
-    public int compare( Student a, Student b)
+    public int compare( StudentSort a, StudentSort b)
     {
         if(a.age>b.age)  // Sorting based on age
             return 1; // 1 means Swapping
@@ -46,11 +46,11 @@ class AgeSort implements Comparator<Student>
 
 public class Comparator_ImplementationClass {
     public static void main(String[] args) {
-        Student st1 = new Student("Goutam",(byte)26,78);
-        Student st2 = new Student("Ram",(byte)23,80);
-        Student st3 = new Student("Varun",(byte)28,56);
+        StudentSort st1 = new StudentSort("Goutam",(byte)26,78);
+        StudentSort st2 = new StudentSort("Ram",(byte)23,80);
+        StudentSort st3 = new StudentSort("Varun",(byte)28,56);
 
-        List<Student> al= new ArrayList<>();
+        List<StudentSort> al= new ArrayList<>();
         al.add(st1);
         al.add(st2);
         al.add(st3);
