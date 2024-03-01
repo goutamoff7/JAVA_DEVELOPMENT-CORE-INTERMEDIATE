@@ -10,16 +10,16 @@ class BufferedWriter_Demo
         BufferedWriter bw = new BufferedWriter(fw); // act as a motor where we attach the stream "fw" to perform faster writing operation which accepts any type of data
 
         // bw.write() operations is appending after the existing text as we mentioned true in fw
-        bw.write("\n");
+        bw.newLine();
         bw.write(66);//B will be included
-        bw.write("\n");
+        bw.newLine();
         bw.write('a'); // character 
-        bw.write("\n");
+        bw.newLine();
         bw.write("Goutam");
-        bw.write("\n");
+        bw.newLine();
         char ch[] = {'j','a','v','a'};
         bw.write(ch); // include char array
-        bw.write("\n");
+        bw.newLine();
         bw.write("BufferedWriter");
         bw.flush(); // whatever in the buffer is inserted in the list
         bw.close();    
