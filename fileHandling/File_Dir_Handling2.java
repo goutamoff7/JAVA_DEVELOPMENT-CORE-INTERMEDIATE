@@ -1,6 +1,4 @@
 import java.io.*;
-
-import javax.sound.midi.Soundbank;
 public class File_Dir_Handling2 {
     public static void main(String[] args) throws IOException{
         
@@ -13,7 +11,7 @@ public class File_Dir_Handling2 {
         file1.createNewFile();
         System.out.println("Goutam.jpg created inside Files directory");
 
-        //Creating "Goutam.jpg" file inside the directory refering by dir
+        //Creating "Arpan.jpg" file inside the directory refering by dir
         File file2 = new File(dir,"Arpan.jpg");
         file2.createNewFile();
         System.out.println("Arpan.jpg created inside Files directory");

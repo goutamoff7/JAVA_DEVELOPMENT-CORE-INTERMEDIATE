@@ -9,9 +9,9 @@ class FileWriter_Demo1
         // FileWriter create the file if not present prior.
         FileWriter fw = new FileWriter("Goutam.txt",true); // fw refering to "Goutam.txt" file directly in the current directory, true means append the text after existing text in the file. 
 
-        FileWriter fw1 = new FileWriter("Files//Goutam.txt",false); //fw1 refering to "Goutam.txt" file which is inside Files directory, by default append is false
+        FileWriter fw1 = new FileWriter("Files\\Goutam.txt",false); //fw1 refering to "Goutam.txt" file which is inside Files directory, by default append is false
 
-        FileWriter fw2 = new FileWriter(textFile,true); // fw refering to textFile, which further refering to Goutam.txt file inside Files directory 
+        FileWriter fw2 = new FileWriter(textFile,true); // fw2 refering to textFile, which further refering to Goutam.txt file inside Files directory 
 
         fw.write("Hello");  // writing in the file "Goutam.txt" which is 
         fw.close(); // 
