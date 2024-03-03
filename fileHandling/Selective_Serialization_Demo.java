@@ -22,10 +22,10 @@ class Selective_Serialization_Demo
         
         Selective_Students std1 = new Selective_Students("Goutam", 26, 24);
         Selective_Students std2 = new Selective_Students("Arpan",21,25);
-        // File dir = new File("Files");
-        // File objFile = new File(dir,"obj.text");
 
-        FileOutputStream fos = new FileOutputStream("Files//obj.txt");
+        File file = new File("Files","obj.txt");
+
+        FileOutputStream fos = new FileOutputStream(file);
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         ObjectOutputStream oos = new ObjectOutputStream(bos);
 

@@ -1,18 +1,18 @@
 import java.io.*;
-class Students implements Serializable
+class Selective_Students implements Serializable
 {
     String name;
-    int age;
+    transient int age;
     int rno;
-    public Students(String name, int age, int rno) 
+    public Selective_Students(String name, int age, int rno) 
     { }
     
     @Override
     public String toString() {
-        return "Students [name=" + name + ", age=" + age + ", rno=" + rno + "]";
+        return "Selective_Students [name=" + name + ", age=" + age + ", rno=" + rno + "]";
     }  
 }
-class De_Serialization_Demo
+class Selective_De_Serialization_Demo
 {
     public static void main(String[] args) throws Exception {
 
@@ -21,8 +21,8 @@ class De_Serialization_Demo
         BufferedInputStream bis = new BufferedInputStream(fis);
         ObjectInputStream ois = new ObjectInputStream(bis);
 
-        Students obj2=(Students)ois.readObject();
-        Students obj1=(Students)ois.readObject();  // reading the data from obj.text and  downcasting the Object type to Students type 
+        Selective_Students obj2=(Selective_Students)ois.readObject();
+        Selective_Students obj1=(Selective_Students)ois.readObject();  // reading the data from obj.text and  downcasting the Object type to Selective_Students type 
         
         System.out.println(obj2);
         System.out.println(obj1);

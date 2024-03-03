@@ -22,10 +22,10 @@ class Serialization_Demo
         
         Students std1 = new Students("Goutam", 26, 24);
         Students std2 = new Students("Arpan",21,25);
-        // File dir = new File("Files");
-        // File objFile = new File(dir,"obj.text");
 
-        FileOutputStream fos = new FileOutputStream("Files//obj.text");
+        File file = new File("Files","obj.txt");//Assuming that "Files" folder already exists
+
+        FileOutputStream fos = new FileOutputStream(file);
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         ObjectOutputStream oos = new ObjectOutputStream(bos);
 

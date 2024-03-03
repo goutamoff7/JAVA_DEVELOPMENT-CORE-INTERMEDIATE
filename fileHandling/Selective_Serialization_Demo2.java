@@ -22,8 +22,8 @@ class Selective_Serialization_Demo2 {
     Selective_Teachers t1=new Selective_Teachers("MG",37,04,37000);
     Selective_Teachers t2=new Selective_Teachers("SKD",38,02,42000); 
 
-    File Selective_TeachersData = new File("Folder","Selective_TeachersData.txt");
-    try(ObjectOutputStream oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(Selective_TeachersData))))
+    File TeachersData = new File("Folder","Selective_TeachersData.txt");
+    try(ObjectOutputStream oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(TeachersData))))
     {
         oos.writeObject(t1);
         oos.writeObject(t2);

@@ -4,7 +4,7 @@ class Selective_Teachers implements Serializable
     String name;
     int age;
     int id;
-    double salary;
+    transient double salary;
     public Selective_Teachers(String name,int age,int id,double salary)
     {
     }
@@ -13,11 +13,11 @@ class Selective_Teachers implements Serializable
         return "Selective_Teachers ["+" Name = "+name+" ,Age = "+age+" ,id = "+id+" ,Salary = "+salary+" ]";
     }
 }
-class DeSerialization_Demo2 {
+class Selective_De_Serialization_Demo2 {
     public static void main(String[] args) {
         Selective_Teachers t1=null,t2=null;
-    File Selective_TeachersData = new File("Folder","Selective_TeachersData.txt");
-    try(ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(Selective_TeachersData))))
+    File TeachersData = new File("Folder","Selective_TeachersData.txt");
+    try(ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(TeachersData))))
     {
         t1 = (Selective_Teachers)ois.readObject();
         t2 = (Selective_Teachers)ois.readObject();
