@@ -7,7 +7,7 @@ class Students_Ex implements Externalizable
     int rno;
     int marks;
 
-    public Students_Ex(){} // No-Argument Constructor Mandatory
+    public Students_Ex(){} // No-Argument Constructor is mandatory otherwise we will get InvalidClassException at the time of De-Externalization
      
     public Students_Ex(String name, int age, int rno, int marks) {
         this.name = name;
@@ -22,19 +22,14 @@ class Students_Ex implements Externalizable
     @Override
     public void writeExternal(ObjectOutput out) throws IOException
     {          
-        out.writeObject(name);
-        out.writeObject(marks);
-        out.writeObject(age);      
+        out.writeObject(name);  // out of 4 variable we store only 3  
+        out.writeObject(marks); // name-marks-age this order is required during 
+        out.writeObject(age);   //De-Externalization   
         
     }
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
-    {       
-        // name=(String)in.readObject();
-        // marks=(int)in.readObject();
-        // age=(int)in.readObject();
-      
-    }
+    {  } // No body required in Externalization
 }
 
 class Externalization_Demo
@@ -53,8 +48,9 @@ class Externalization_Demo
         System.out.println(std1);
         System.out.println(std2);
 
-        oos.writeObject(std1);
-        oos.writeObject(std2);
+        oos.writeObject(std1); 
+        // it will internally call writeExternal(ObjectOutput out) method of the target class
+        oos.writeObject(std2); 
         
         oos.flush();
         oos.close();

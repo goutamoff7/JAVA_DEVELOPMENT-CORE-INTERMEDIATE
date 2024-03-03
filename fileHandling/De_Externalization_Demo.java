@@ -18,13 +18,14 @@ class Students_Ex implements Externalizable
     }  
     @Override
     public void writeExternal(ObjectOutput out) throws IOException
-    {}
+    {} // No body required in De-Externalization
+
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
     {
        // Order of readObject should follow the order of writeObject during Externalization (name->marks->age) order
         name=(String)in.readObject();
-        age=(int)in.readObject();      // here age and marks order swapped    
+        age=(int)in.readObject();      // here age and marks order  are intensionally swapped    
         marks=(int)in.readObject();    // hence, values are also swapped
     }
 }
@@ -39,8 +40,9 @@ class De_Externalization_Demo
         BufferedInputStream bis = new BufferedInputStream(fis);
         ObjectInputStream ois = new ObjectInputStream(bis);
         
-        Students_Ex std2 =(Students_Ex)ois.readObject();
-        Students_Ex std1 =(Students_Ex)ois.readObject();        
+        Students_Ex std2 =(Students_Ex)ois.readObject(); 
+        // it will internally call readExternal(ObjectInput in) method of the target class        
+        Students_Ex std1 =(Students_Ex)ois.readObject();
         
         System.out.println(std2); 
         System.out.println(std1);       
