@@ -1,3 +1,4 @@
+package encapsulation;
 public class Setter_Getter {
 	private int value;
 

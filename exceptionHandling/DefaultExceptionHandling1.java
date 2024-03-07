@@ -1,3 +1,4 @@
+package exceptionHandling;
 //Demonstration for un-handled Exception
 public class DefaultExceptionHandling1 {
 	public static void main(String[] args) {

@@ -1,4 +1,5 @@
-import java.io.*;
+package linkedList;
+
 import java.util.*;
 class ArrayListExample
 {

@@ -1,3 +1,4 @@
+package map;
 import java.util.*;
 
 // LinkedLinkedHashMap can be used in Multi threading Environment.

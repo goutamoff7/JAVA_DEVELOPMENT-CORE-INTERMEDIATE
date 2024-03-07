@@ -1,14 +1,14 @@
-import java.io.*;
+package basic;
 class Abc
 {
-
-	public static void main (int a, int b, int c)
+	
+	public static void main(String[] args)
 	{
-		int avg,s;
-		s=a+b+c;
-		avg=(a+b+c)/3;
-		System.out.println("Summation= "+s);
+		int a=12,b=15,c=7,sum;
+		float avg;
+		sum=a+b+c;
+		avg=(a+b+c)/3.0f;
+		System.out.println("Summation= "+sum);
 		System.out.println("Average= "+avg);
-		Abc ob = new Abc(12,15,7);
 	}
 }

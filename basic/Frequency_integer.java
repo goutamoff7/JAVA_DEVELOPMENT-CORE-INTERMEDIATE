@@ -1,4 +1,5 @@
-import java.io.*;
+package basic;
+
 import java.util.Scanner;
 class Frequency_integer 
 {   

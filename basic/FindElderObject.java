@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.Scanner;
 class Student1
 {

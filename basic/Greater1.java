@@ -1,4 +1,5 @@
-import java.util.*;
+package basic;
+
 interface Abc
 {
 	int a=10,b=20,c=30;

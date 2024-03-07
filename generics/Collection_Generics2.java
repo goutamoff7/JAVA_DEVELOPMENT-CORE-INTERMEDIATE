@@ -1,3 +1,4 @@
+package generics;
 import java.util.*;
 
 class Student {

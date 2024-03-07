@@ -1,3 +1,5 @@
+package basic;
+
 class ArithmeticOperation{
 public static void main(String[] args) 
    {

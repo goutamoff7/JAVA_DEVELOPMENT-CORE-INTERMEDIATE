@@ -1,3 +1,4 @@
+package exceptionHandling;
 class DefaultException_both_try_catch {
 	public static void main(String[] args) {
 		System.out.println("Enter main method");

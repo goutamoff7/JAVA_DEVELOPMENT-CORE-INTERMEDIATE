@@ -1,5 +1,5 @@
+package array;
 import java.util.Scanner;
-
 class FindIndex_Array {
     public static void main(String[] args) {
         int ar[] = { 5, 6, 8, 9, 4 };

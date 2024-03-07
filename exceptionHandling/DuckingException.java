@@ -1,3 +1,4 @@
+package exceptionHandling;
 public class DuckingException {
 	public static void a() throws ArithmeticException {
 		System.out.println(10 / 0);

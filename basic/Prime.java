@@ -1,3 +1,5 @@
+package basic;
+
 //PRIME NO
 import java.io.*;
 import java.util.Scanner;

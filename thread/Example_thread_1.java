@@ -1,3 +1,4 @@
+package thread;
 class Example_thread extends Thread
 {}
 class Example_thread_1

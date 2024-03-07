@@ -1,3 +1,4 @@
+package exceptionHandling;
 import java.util.Scanner;
 
 class Try_with_Resources1 {

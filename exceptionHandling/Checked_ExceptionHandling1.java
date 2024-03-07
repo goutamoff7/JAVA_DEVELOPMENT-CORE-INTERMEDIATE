@@ -1,4 +1,4 @@
-
+package exceptionHandling;
 //Resolve compilation error of Checked Exception using throws keyword. 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

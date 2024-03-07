@@ -1,3 +1,5 @@
+package basic;
+
 class Static_Binding
 {
   private void eat()

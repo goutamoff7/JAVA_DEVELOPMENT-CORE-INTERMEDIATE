@@ -1,3 +1,4 @@
+package exceptionHandling;
 
 //Resolve compilation error of Checked Exception using try-catch block. 
 import java.io.BufferedReader;

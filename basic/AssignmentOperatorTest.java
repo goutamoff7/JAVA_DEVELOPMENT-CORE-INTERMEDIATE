@@ -1,3 +1,4 @@
+package basic;
 public class AssignmentOperatorTest 
 {
     public static void main(String[] args) 

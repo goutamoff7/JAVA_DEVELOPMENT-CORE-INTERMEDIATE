@@ -1,9 +1,11 @@
+package linkedList;
 //SINGLE LINKED LIST
-import java.io.*;
-import java.util.Scanner;
-import java.lang.*;
 
-class LinkedList {
+
+import java.util.Scanner;
+
+
+class LinkedListDemo {
 	Scanner read = new Scanner(System.in);
 
 	class Node {
@@ -223,12 +225,12 @@ class LinkedList {
 
 }
 
-class SingleLinkedList
+class SingleLinkedListDemo
 {
 
 	public static void main(String[] args) 
 	{
-		LinkedList list = new LinkedList();
+		LinkedListDemo list = new LinkedListDemo();
 		Scanner read = new Scanner(System.in);
 		while (true) {
 			System.out.println("\nPress 1 for Insert Data");

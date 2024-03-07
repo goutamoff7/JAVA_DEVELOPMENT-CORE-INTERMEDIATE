@@ -1,3 +1,4 @@
+package exceptionHandling;
 import java.util.Scanner;
 class ExceptionHandleExample1
 {

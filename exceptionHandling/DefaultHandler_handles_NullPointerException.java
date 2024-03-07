@@ -1,3 +1,4 @@
+package exceptionHandling;
 class DefaultHandler_handles_NullPointerException {
 	public static void main(String[] args) {
 		try {

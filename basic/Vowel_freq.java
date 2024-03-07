@@ -1,3 +1,5 @@
+package basic;
+
 //VOWEL FREQUENCY
 import java.io.*;
 import java.util.Scanner;

@@ -65,9 +65,9 @@ class Problem168 {
 	public static void main(String[] args) {
 		// int columnNumber = 1;
 		// int columnNumber = 28;
-		int columnNumber = 701;
+		//int columnNumber = 701;
 		// int columnNumber = 2147483647;
-		// int columnNumber = 52;
+		int columnNumber = 52;
 		System.out.println(new Problem168().convertToTitle(columnNumber));
 	}
 }

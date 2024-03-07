@@ -1,3 +1,4 @@
+package map;
 import java.util.*;
 
 // Hashtable can not be used in Multi threading Environment.

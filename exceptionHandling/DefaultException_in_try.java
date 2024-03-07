@@ -1,3 +1,4 @@
+package exceptionHandling;
 class DefaultException_in_try {
 	public static void main(String[] args) {
 		System.out.println("Enter main method");

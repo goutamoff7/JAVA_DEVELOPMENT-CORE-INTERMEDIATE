@@ -1,3 +1,5 @@
+package basic;
+
 // print Prime number within a range 
 import java.io.*;
 import java.util.Scanner;

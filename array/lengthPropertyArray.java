@@ -1,3 +1,4 @@
+package array;
 public class lengthPropertyArray 
 {
     public static void main(String[] args)

@@ -1,3 +1,5 @@
+package basic;
+
 class Car
 {
   void run()

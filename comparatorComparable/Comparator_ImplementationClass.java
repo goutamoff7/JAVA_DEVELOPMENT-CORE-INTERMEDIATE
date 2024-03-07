@@ -1,3 +1,4 @@
+package comparatorComparable;
 import java.util.*;
 
 class StudentSort

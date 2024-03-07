@@ -1,3 +1,4 @@
+package exceptionHandling;
 import java.io.IOException;
 
 class Exception_tryCatch_fullyChecked2 {

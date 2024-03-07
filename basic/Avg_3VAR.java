@@ -1,3 +1,5 @@
+package basic;
+
 //AVERAGE OF 3 VARIABLE (LOCAL,STATIC,INSTANCE)
 import java.io.*;
 class Avg_3VAR

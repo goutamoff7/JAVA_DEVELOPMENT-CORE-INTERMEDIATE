@@ -1,3 +1,5 @@
+package basic;
+
 public class ConditionalStatementExample {
     public static void main(String[] args) {
         {

@@ -1,3 +1,5 @@
+package basic;
+
 //print the first multiple of 5 which is also a multiple of 7
 public class FirstMultipleOf5And7 {
     public static void main(String[] args) {

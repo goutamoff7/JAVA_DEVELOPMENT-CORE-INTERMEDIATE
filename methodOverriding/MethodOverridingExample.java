@@ -1,3 +1,4 @@
+package methodOverriding;
 class Animal {
 	void move() {
 		System.out.println("Animal can move");

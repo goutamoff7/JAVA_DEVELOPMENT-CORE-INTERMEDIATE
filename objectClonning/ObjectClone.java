@@ -1,5 +1,7 @@
 //Object CLone
+package objectClonning;
 import java.lang.Cloneable;
+
 class Student implements Cloneable
 {
     String sid,sname;

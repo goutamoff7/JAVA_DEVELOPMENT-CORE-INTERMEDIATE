@@ -1,7 +1,8 @@
+package linkedList;
 //DOUBLY LINKED LIST
-import java.io.*;
+
 import java.util.Scanner;
-import java.lang.*;
+
 class LinkedList
 {
 	Scanner read=new Scanner(System.in);

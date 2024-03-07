@@ -1,3 +1,4 @@
+package randomNoGeneration;
 import java.util.Random;
 class Random_exp3
 {

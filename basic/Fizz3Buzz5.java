@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.Scanner;
 public class Fizz3Buzz5 {
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
 //Shallow Cloning
+package objectClonning;
 import java.lang.Cloneable;
 class A
 {

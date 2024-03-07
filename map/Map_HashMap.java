@@ -1,3 +1,4 @@
+package map;
 import java.util.*;
 
 // HashMap can be used in Multi threading Environment.

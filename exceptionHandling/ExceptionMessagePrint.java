@@ -1,3 +1,4 @@
+package exceptionHandling;
 class ExceptionMessagePrint {
 	public static void main(String[] args) {
 		try{

@@ -1,3 +1,4 @@
+package exceptionHandling;
 class ExceptionHandleExample3 extends Exception
 {
     public static void main(String[] args)

@@ -1,3 +1,4 @@
+package typesOfInnerClass;
 class OuterClass {
 	void method() {
 		System.out.println("Outer Class method");

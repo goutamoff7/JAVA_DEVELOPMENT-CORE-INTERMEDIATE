@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.Scanner;
 public class ContinueExample_Factors {
     public static void main(String[] args) {

@@ -1,7 +1,8 @@
+package pattern;
 import java.io.*;
 public class Ptrn1
 {
-	public static void main(String args[])throws IOException
+	public static void main(String args[])
 	{
 		int i,j,k,n;
 		InputStreamReader read=new InputStreamReader(System.in);

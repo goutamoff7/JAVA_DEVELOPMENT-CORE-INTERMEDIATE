@@ -1,3 +1,4 @@
+package exceptionHandling;
 public class DuckingException_ReThrow {
 	public static void a() throws ArithmeticException 
 	{

@@ -1,3 +1,4 @@
+package exceptionHandling;
 public class CustomException3 {
 	public static void main(String[] args) {
 		throw new Exception();

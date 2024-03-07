@@ -1,3 +1,4 @@
+package exceptionHandling;
 //Demonstration of proper Handled the Exception
 public class DefaultExceptionHandling2 {
 	public static void main(String[] args) {

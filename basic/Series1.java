@@ -1,3 +1,5 @@
+package basic;
+
 //1+a+a^2+a^3+.......a^n (a=2,n is given by user)
 import java.io.*;
 import java.util.Scanner;

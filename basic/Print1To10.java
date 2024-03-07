@@ -1,3 +1,5 @@
+package basic;
+
 public class Print1To10 
 {
     public static void main(String[] args)

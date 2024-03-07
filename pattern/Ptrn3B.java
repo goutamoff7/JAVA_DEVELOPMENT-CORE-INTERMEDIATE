@@ -1,4 +1,4 @@
-import java.io.*;
+package pattern;
 import java.util.Scanner;
 class Ptrn3B
 {

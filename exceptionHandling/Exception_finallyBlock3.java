@@ -1,3 +1,4 @@
+package exceptionHandling;
 //Finally Block - if an exception is raised and corresponding  
 //catch block not matched 
 public class Exception_finallyBlock3 {

@@ -1,3 +1,6 @@
+package collectionFramework;
+
+
 import java.util.*;
 
 class Collection_ArrayList {

@@ -1,4 +1,4 @@
-import java.io.*;
+package array;
 import java.util.Scanner;
 
 class Matrix_addition

@@ -1,3 +1,4 @@
+package exceptionHandling;
 public class CustomException1 extends RuntimeException {
 	public static void main(String[] args) throws CustomException1 {
 	}

@@ -1,4 +1,4 @@
-import java.io.*;
+package array;
 class Array_test
 {
 	public static void main(String a[])

@@ -1,3 +1,5 @@
+package basic;
+
 //print day name based upon the day number ( Monday-1, Tuesday-2)
 import java.util.Scanner;
 public class DayName_Switch_Case {

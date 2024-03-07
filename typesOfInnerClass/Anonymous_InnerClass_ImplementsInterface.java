@@ -1,3 +1,6 @@
+package typesOfInnerClass;
+import inheritance.A;
+
 interface A {
 	void m1();
 

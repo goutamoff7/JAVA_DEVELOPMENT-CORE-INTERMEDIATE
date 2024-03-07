@@ -1,4 +1,7 @@
-import java.util.*; 
+package comparatorComparable;
+import java.util.*;
+
+import Student; 
 
 class Student implements Comparable<Student>
 {

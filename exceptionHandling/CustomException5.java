@@ -1,3 +1,4 @@
+package exceptionHandling;
 class CustomException5{
 	static ArithmeticException e = new ArithmeticException();
 	public static void main(String[] args) {

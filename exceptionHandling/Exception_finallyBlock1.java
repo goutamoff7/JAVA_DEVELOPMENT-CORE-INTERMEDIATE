@@ -1,3 +1,4 @@
+package exceptionHandling;
 //Finally Block - if there is no exception
 public class Exception_finallyBlock1 {
 	public static void main(String[] args) {

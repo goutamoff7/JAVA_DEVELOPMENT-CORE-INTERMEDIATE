@@ -1,3 +1,5 @@
+package collectionFramework;
+
 import java.util.*;
 public class Collection_SubClasses_Generics_Declaration {
     public static void main(String[] args) {

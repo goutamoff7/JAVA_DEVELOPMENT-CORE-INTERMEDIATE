@@ -1,4 +1,5 @@
 //BINARY SEARCH TREE
+package graph;
 import java.util.Scanner;
 class BinarySearchTree
 {

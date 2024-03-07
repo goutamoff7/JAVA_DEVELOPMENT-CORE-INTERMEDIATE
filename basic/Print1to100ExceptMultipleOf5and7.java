@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.Scanner;
 class Print1to100ExceptMultipleOf5and7
 {

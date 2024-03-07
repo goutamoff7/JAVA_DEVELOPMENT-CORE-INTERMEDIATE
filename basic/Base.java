@@ -1,4 +1,5 @@
-import java.io.*;
+package basic;
+
 class Base
 {
  	public static void display()

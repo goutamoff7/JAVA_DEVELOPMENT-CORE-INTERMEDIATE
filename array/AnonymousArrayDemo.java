@@ -1,3 +1,4 @@
+package array;
 public class AnonymousArrayDemo
 {
     public static void main(String args[])

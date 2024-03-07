@@ -1,3 +1,4 @@
+package randomNoGeneration;
 import java.util.concurrent.ThreadLocalRandom;;
 class Random_exp4
 {

@@ -1,3 +1,5 @@
+package basic;
+
 // if the input character is 'a' or not??
 import java.util.Scanner;
 public class Check_a_orNot

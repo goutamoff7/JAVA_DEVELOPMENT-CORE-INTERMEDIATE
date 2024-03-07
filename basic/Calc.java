@@ -1,3 +1,5 @@
+package basic;
+
 import java.io.*;
 import java.util.Scanner;
 class Calc

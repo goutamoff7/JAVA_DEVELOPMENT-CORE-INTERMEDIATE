@@ -1,3 +1,4 @@
+package thread;
 class Example_thread extends Thread
 {
     public void run()

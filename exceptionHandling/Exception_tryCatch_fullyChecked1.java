@@ -1,3 +1,4 @@
+package exceptionHandling;
 class Exception_tryCatch_fullyChecked1 {
 	public static void main(String[] args) {
 		try {

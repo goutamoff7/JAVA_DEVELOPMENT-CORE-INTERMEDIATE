@@ -1,3 +1,5 @@
+package basic;
+
 interface Abc1
 {
 	int x=10;

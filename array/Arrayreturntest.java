@@ -1,4 +1,4 @@
-import java.io.*;
+package array;
 class Arrayreturntest
 {
 	static int[] get(){return new int[]{10,20,30,40,50};}

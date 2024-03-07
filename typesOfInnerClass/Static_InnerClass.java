@@ -1,3 +1,4 @@
+package typesOfInnerClass;
 class OuterClass { // Outer class can't be declared as static
 	void method() {
 		System.out.println("Outer Class method");
