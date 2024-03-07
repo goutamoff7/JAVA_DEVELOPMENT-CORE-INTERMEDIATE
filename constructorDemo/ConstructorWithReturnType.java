@@ -1,3 +1,5 @@
+package constructorDemo;
+
 class Test {
 	void Test() // JVM Treated this as method not constructor
 	// as we have given return type

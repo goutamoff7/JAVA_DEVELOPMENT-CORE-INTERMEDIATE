@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2828. Check if a String Is an Acronym of Words
 Input: words = ["alice","bob","charlie"], s = "abc"
 Output: true

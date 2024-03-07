@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2942. Find Words Containing Character
 Input: words = ["leet","code"], x = "e"
 Output: [0,1]

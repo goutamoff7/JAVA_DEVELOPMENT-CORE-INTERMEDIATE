@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2341. Maximum Number of Pairs in Array
 You are given a 0-indexed integer array nums. In one operation, you may do the following:
 

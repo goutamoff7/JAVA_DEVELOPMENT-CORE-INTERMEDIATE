@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 1380. Lucky Numbers in a Matrix
 Given an m x n matrix of distinct numbers, 
 return all lucky numbers in the matrix in any order.

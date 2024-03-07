@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2798. Number of Employees Who Met the Target
 There are n employees in a company, numbered from 0 to n - 1. 
 Each employee i has worked for hours[i] hours in the company.

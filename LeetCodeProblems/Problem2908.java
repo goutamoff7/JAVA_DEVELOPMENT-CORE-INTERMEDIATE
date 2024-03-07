@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2908. Minimum Sum of Mountain Triplets I
  * You are given a 0-indexed array nums of integers.
 A triplet of indices (i, j, k) is a mountain if:

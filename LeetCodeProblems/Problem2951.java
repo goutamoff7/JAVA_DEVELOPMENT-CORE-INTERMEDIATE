@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /*
  * 2951. Find the Peaks
  * Input: mountain = [1,4,3,8,5]

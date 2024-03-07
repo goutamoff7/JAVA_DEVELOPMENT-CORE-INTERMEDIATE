@@ -1,3 +1,4 @@
+package leetCodeProblems;
 
 /* 2418. Sort the People
  * You are given an array of strings names, 

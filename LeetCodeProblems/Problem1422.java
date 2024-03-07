@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /*1422. Maximum Score After Splitting a String
 Input: s = "011101"
 Output: 5 

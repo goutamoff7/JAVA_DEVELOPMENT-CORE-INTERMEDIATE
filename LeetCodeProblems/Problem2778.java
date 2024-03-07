@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2778. Sum of Squares of Special Elements
 You are given a 1-indexed integer array nums of length n.
 An element nums[i] of nums is called special if i divides n, i.e. n % i == 0.

@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2496. Maximum Value of a String in an Array
 The value of an alphanumeric string can be defined as:
 The numeric representation of the string in base 10, 

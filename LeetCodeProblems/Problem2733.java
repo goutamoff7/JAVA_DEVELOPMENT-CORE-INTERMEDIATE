@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2733. Neither Minimum nor Maximum 
 Given an integer array nums containing distinct positive integers, 
 find and return any number from the array that is neither the minimum nor 

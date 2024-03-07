@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* Find Champion I
 There are n teams numbered from 0 to n - 1 in a tournament.
 

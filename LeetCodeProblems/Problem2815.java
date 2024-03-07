@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2815. Max Pair Sum in an Array
 You are given a 0-indexed integer array nums. 
 You have to find the maximum sum of a pair of numbers from nums such that 

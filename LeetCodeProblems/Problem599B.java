@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 599. Minimum Index Sum of Two Lists
  * Given two arrays of strings list1 and list2, 
  * find the common strings with the least index sum.

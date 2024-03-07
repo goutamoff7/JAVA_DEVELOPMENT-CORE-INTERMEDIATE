@@ -1,3 +1,4 @@
+package leetCodeProblems;
 /* 2956. Find Common Elements Between Two Arrays
  * Input: nums1 = [4,3,2,3,1], nums2 = [2,2,5,2,3,6]
 Output: [3,4]
