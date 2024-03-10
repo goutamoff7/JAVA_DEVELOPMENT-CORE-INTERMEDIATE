@@ -1,2 +1,4 @@
 # Ignore class file
 *.class
+# Ignore Incomplete java file
+*Incomplete.java
