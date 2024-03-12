@@ -12,7 +12,7 @@ public class StreamAPI_map_Function_apply {
         Stream<Integer> str = list.stream();
         
         //implement apply method of Funtion Interface
-        // Function<Integer,Integer> fun = new Function<Integer,Integer>() {
+        //Function<Integer,Integer> fun = new Function<Integer,Integer>() {
             
         //         @Override   
         //         public Integer apply(Integer n)

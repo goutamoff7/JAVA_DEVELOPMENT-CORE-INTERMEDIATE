@@ -7,7 +7,7 @@ class DateTime_util_Demo1 {
         long timeInMs = d.getTime(); 
     System.out.println(timeInMs); // prints time in mili Sec
 
-        java.sql.Date ds = new java.sql.Date(timeInMs); // Date class in sql package extends Date class of Util package, it requires long type data, returns only date.java.sql.Date used in database operation.
+        java.sql.Date ds = new java.sql.Date(timeInMs); // Date class in sql package extends Date class of Util package, it requires long type data, returns only date used in database operation.
     System.out.println(ds); // prints only current date (YYYY-MM-DD) FORMAT
 
         long timeInMs2 = ds.getTime(); 
