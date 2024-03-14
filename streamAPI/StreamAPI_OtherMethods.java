@@ -29,12 +29,12 @@ public class StreamAPI_OtherMethods {
         System.out.println("Summation of Element = "+sum2);
         
 
-        // count() method
+        // long count() method
         List<Integer> list2 = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
         Stream<Integer> str3 = list2.stream();
         System.out.println("No. of Element = "+str3.count());
 
-        // toArray() method and Arrays.toString(Object[] a) method
+        // Object[] toArray() method and Arrays.toString(Object[] a) method
         Stream<Integer> str4 = list2.stream();
         Object ar2[] = str4.toArray();
         System.out.println(Arrays.toString(ar2));
@@ -47,7 +47,7 @@ public class StreamAPI_OtherMethods {
 
         //Optional<T> min(Comparator<? super T> comparator) method with compareTo() method of Integer class
         Stream<Integer> str6 = list3.stream();
-        Optional<Integer> minElement = str6.min((n1, n2) -> n1.compareTo(n2)); 
+        Optional<Integer> minElement = str6.min((n1, n2) -> Integer.compare(n1,n2)); 
         System.out.println("Smallest Element : "+minElement.get());
 
 
