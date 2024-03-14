@@ -40,7 +40,6 @@ class Enum_Constructor
         System.out.println(Direction.WEST+" : "+Direction.WEST.getAngle()+" Degree");
         System.out.println(Direction.NORTH+" : "+Direction.NORTH.getAngle()+" Degree");
         System.out.println(Direction.SOUTH+" : "+Direction.SOUTH.getAngle()+" Degree");
-        System.out.println(Enum.getEnumConstants());
 
         
     }

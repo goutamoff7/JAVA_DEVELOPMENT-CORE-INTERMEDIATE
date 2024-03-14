@@ -1,7 +1,6 @@
 package fileHandling;
 import java.io.*;
 
-import Dog;
 class Dog implements Serializable 
 {
     private static final long serialVersionUID=2L;
