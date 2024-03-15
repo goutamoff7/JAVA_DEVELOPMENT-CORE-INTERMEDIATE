@@ -12,18 +12,19 @@ public class StreamAPI_OtherMethods {
         List<Integer> list = Arrays.asList(1,2,3,4,5);
         System.out.println(list);
 
-        // reduced(BinaryOperator<T> accumulator) method : Example-1
+        // Optional<T> reduce(BinaryOperator<T> accumulator) method : Example-1
         Stream<Integer> str = list.stream();                
         Optional<Integer> sum1 = str.reduce((i,j)->i+j);        
-        System.out.println(sum1.get());
+        System.out.println("Summation of Element = "+sum1);
+        System.out.println("Summation of Element = "+sum1.get());
 
-        // reduced(BinaryOperator<T> accumulator) method : Example-2
+        // Optional<T> reduce(BinaryOperator<T> accumulator) method : Example-2
         String ar[] = {"Computer","Science","Engineering"};
         Stream<String> str2 = Arrays.stream(ar);                
         Optional<String> combined = str2.reduce((i,j)->i+" "+j);        
         System.out.println(combined.get());
 
-        // reduced(T identity, BinaryOperator<T> accumulator) method
+        // T reduce(T identity, BinaryOperator<T> accumulator) method
         Stream<Integer> str1 = list.stream();                
         int sum2 = str1.reduce(100,(i,j)->i+j);  // 100 is added to the summation of elements      
         System.out.println("Summation of Element = "+sum2);
@@ -45,7 +46,7 @@ public class StreamAPI_OtherMethods {
         Optional<Integer> maxElement = str5.max((n1, n2) -> n1.compareTo(n2));  
         System.out.println("Largest Element : "+maxElement.get());
 
-        //Optional<T> min(Comparator<? super T> comparator) method with compareTo() method of Integer class
+        //Optional<T> min(Comparator<? super T> comparator) method with Integer.compare() method of Integer class
         Stream<Integer> str6 = list3.stream();
         Optional<Integer> minElement = str6.min((n1, n2) -> Integer.compare(n1,n2)); 
         System.out.println("Smallest Element : "+minElement.get());
