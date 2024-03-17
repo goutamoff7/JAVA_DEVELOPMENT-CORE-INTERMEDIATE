@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
     String qualification() default "Under Graduate"; // no need to give value for qualification, by default it will set
 }
 
-@StudentDetails (college="Sanaka")    
+@StudentDetails //CE:The annotation @StudentDetails must define the attribute college 
 interface CustomAnnotation     // Annotation used in TYPE: interface
 {
 
@@ -38,28 +38,28 @@ interface CustomAnnotation     // Annotation used in TYPE: interface
     int[] a() default {10,20}; // 1-D Array allowed
 }
 
-//Applying the annotation
+//Applying the above annotation
 @TestAnnotation2
 class A{}
 
-//Applying annotation
-@StudentDetails (college="WBSI",qualification="Diploma") // Annotation used in TYPE : class 
-class Goutam 
+//Applying annotation @StudentDetails in other Target
+@StudentDetails (college="WBSI",qualification="Diploma") 
+class Goutam   // Annotation used in TYPE : class 
 {
     
     String name;
-    @StudentDetails (college="Sanaka") // Annotation used in FIELD : rno
-    int rno;
+    @StudentDetails (college="Sanaka") 
+    int rno;    // Annotation used in FIELD : rno
     private float marks;
 
-    @StudentDetails (college="Sanaka") // Annotation used in CONSTRUCTOR
-    Goutam()
+    @StudentDetails (college="Sanaka") 
+    Goutam()   // Annotation used in CONSTRUCTOR
     {
         System.out.println("Constructor of Goutam class" );
     }
     
-    @StudentDetails (college="Sanaka") // Annotation used in METHOD
-    public float getMarks()
+    @StudentDetails (college="Sanaka") 
+    public float getMarks()    // Annotation used in METHOD getMarks()
     {
         return marks;
     }
@@ -74,17 +74,26 @@ class Goutam
 public class CustomAnnotation_Demo1 {
     public static void main(String[] args) {
         
-        @StudentDetails (college="Sanaka") // Annotation used in LOCAL_VARIABLE
-        Goutam g = new Goutam();
+        @StudentDetails (college="Sanaka") 
+        Goutam g = new Goutam();   // Annotation used in LOCAL_VARIABLE : g
         g.setMarks(78.5f); 
         System.out.println(g.getMarks());
 
+        //Application of Refection API
         Class c = g.getClass();
         Annotation a = c.getAnnotation(StudentDetails.class);
         StudentDetails sd = (StudentDetails)a;
         System.out.println(sd.college());
         System.out.println(sd.annotationType());
         System.out.println(sd.qualification());
+
+        //Can be used by method chaining
+        StudentDetails sd2 = (StudentDetails)g.getClass().getAnnotation(StudentDetails.class);
+        System.out.println(sd.college());
+        System.out.println(sd.annotationType());
+        System.out.println(sd.qualification());
+
+
     }
 
 }
