@@ -6,11 +6,6 @@ class Enum_Constructor
        {
             //int angle; // can't declare variable here
             EAST,WEST,NORTH,SOUTH;
-            //behind the scene : 
-            //public static final Direction EAST = new Direction();
-            //public static final Direction WEST = new Direction();
-            //public static final Direction NORTH = new Direction();
-            //public static final Direction SOUTH = new Direction();
             
             private int angle;
 
