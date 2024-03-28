@@ -6,7 +6,7 @@ class Demo
     
 }
 //If we need to extend Demo class in this approach (implementing Runnable interface) it is be possible
-class Calculator extends Demo implements Runnable
+class Calculator1 extends Demo implements Runnable
 {
     public void run()
     {
@@ -21,7 +21,7 @@ class Calculator extends Demo implements Runnable
     }
 }
 
-class Message  implements Runnable
+class Message1  implements Runnable
 
 {
     public void run()
@@ -46,8 +46,8 @@ class Message  implements Runnable
 public class CreateThread_ImplementsRunnable_Demo1 {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName()+" - MainThread");
-        Calculator cal = new Calculator();
-        Message msg = new Message();
+        Calculator1 cal = new Calculator1();
+        Message1 msg = new Message1();
 
         Thread t1 = new Thread(cal);
         Thread t2 = new Thread(msg);

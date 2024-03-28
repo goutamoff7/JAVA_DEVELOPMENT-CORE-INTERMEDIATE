@@ -39,7 +39,7 @@ public class StreamAPI_OtherMethods {
         Stream<Integer> str4 = list2.stream();
         Object ar2[] = str4.toArray();
         System.out.println(Arrays.toString(ar2));
-        
+
         List<Integer> list3 = Arrays.asList(5,67,16,95,10);
        //Optional<T> max(Comparator<? super T> comparator) method with compareTo() method of Integer class
         Stream<Integer> str5 = list3.stream();

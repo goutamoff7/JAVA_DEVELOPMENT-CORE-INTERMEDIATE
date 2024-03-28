@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 class MultiThreading implements Runnable
 {
-    public void calculator()
+    public void calculator2()
     {
         Scanner sc = new Scanner(System.in); 
         System.out.print("Enter First Number : ");
@@ -33,7 +33,7 @@ class MultiThreading implements Runnable
     {
         String name = Thread.currentThread().getName(); 
         if(name.equals("calc"))
-        calculator();
+        calculator2();
        else
         messagePrint(); 
     }
@@ -42,9 +42,9 @@ class MultiThread_Single_RunMethod2
 {
     public static void main(String[] args) {
         MultiThreading m1 = new MultiThreading();
-        MultiThreading m2 = new MultiThreading();
+        //MultiThreading m2 = new MultiThreading();
         Thread t1 = new Thread(m1);
-        Thread t2 = new Thread(m2);
+        Thread t2 = new Thread(m1);
 
         t1.setName("calc");
         t2.setName("mPrint");
