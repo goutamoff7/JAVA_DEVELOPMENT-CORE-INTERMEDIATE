@@ -9,7 +9,7 @@ class Daemon implements Runnable
             System.out.println("Child Thread");
     }
 }
-class DaemonThread_Case
+class DaemonThread_Demo
 {
     public static void main(String[] args) 
     {
