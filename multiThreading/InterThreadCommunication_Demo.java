@@ -12,7 +12,7 @@ class Value
         System.out.println("Set : "+num);
         this.num = num;
         setValue = true;
-        notify();        
+       notify();        
     }
     synchronized public void get()
     {
@@ -41,7 +41,7 @@ class Producer implements Runnable
         while(true)
         {
             v.set(i++);
-            try{ Thread.sleep(500);}
+            try{ Thread.sleep(2000);}
             catch(Exception e) { e.printStackTrace();}            
         }
     }
@@ -57,12 +57,11 @@ class Consumer implements Runnable
         t.start();
     }
     public void run()
-    {
-        int i=0;
+    { 
         while(true)
         {
             v.get();
-            try{ Thread.sleep(3000);}
+            try{ Thread.sleep(2000);}
             catch(Exception e) { e.printStackTrace();}
             
         }
