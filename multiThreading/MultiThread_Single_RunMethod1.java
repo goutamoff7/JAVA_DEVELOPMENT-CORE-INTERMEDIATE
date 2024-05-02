@@ -1,7 +1,7 @@
 package multiThreading;
 import java.util.Scanner;
 
-class MyThread extends Thread
+class MyThread_2 extends Thread
 {
     public void calculator1()
     {
@@ -42,8 +42,8 @@ class MyThread extends Thread
 class MultiThread_Single_RunMethod1
 {
     public static void main(String[] args) {
-        MyThread t1 = new MyThread();
-        MyThread t2 = new MyThread();
+        MyThread_2 t1 = new MyThread_2();
+        MyThread_2 t2 = new MyThread_2();
 
         t1.setName("calc");
         t2.setName("mPrint");

@@ -1,5 +1,5 @@
 package wrapperClass;
-class PrimitiveToObject_Boxing
+class PrimitiveToObject_AutoBoxing
 {
     public static void main(String[] args) {
         byte a = 10;

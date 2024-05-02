@@ -1,7 +1,5 @@
 package wrapperClass;
 
-import javax.crypto.interfaces.DHPrivateKey;
-
 class ObjectToPrimitive_AutoUnBoxing
 {
     public static void main(String[] args) {   

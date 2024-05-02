@@ -1,7 +1,7 @@
 package multiThreading;
 
 //Car1 and Car2 are two instance resource and can be used by 3 Person (Thread)
-class Car implements Runnable
+class NewCar implements Runnable
 {
     public void entered()
     {
@@ -45,7 +45,7 @@ class Car implements Runnable
 }
 public class Synchronized_StaticMethod {
    public static void main(String[] args) {
-    Car c = new Car();
+    NewCar c = new NewCar();
     
     Thread s1 = new Thread(c);
     Thread s2 = new Thread(c);

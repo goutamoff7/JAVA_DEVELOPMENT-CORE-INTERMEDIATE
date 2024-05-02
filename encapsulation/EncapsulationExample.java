@@ -60,7 +60,7 @@ public class EncapsulationExample {
 		Scanner read = new Scanner(System.in);
 		AadharCardDetails person1=new AadharCardDetails(1);
 		System.out.print("Enter Aadhar Number: ");
-		person1.setaNum(read.nextLong());
+		person1.setNum(read.nextLong());
 		read.nextLine();
 		System.out.print("Enter Name: ");
 		person1.setName(read.nextLine());
@@ -70,7 +70,7 @@ public class EncapsulationExample {
 		person1.setGender(read.next().charAt(0));
 
 		System.out.println("Serial No: "+person1.getSno());
-		System.out.println("Aadhar Number: "+person1.getaNum());
+		System.out.println("Aadhar Number: "+person1.getNum());
 		System.out.println("Name: "+person1.getName());
 		System.out.println("Age: "+person1.getAge());
 		System.out.println("Gender: "+person1.getGender());
