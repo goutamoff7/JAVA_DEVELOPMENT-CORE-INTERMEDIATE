@@ -2,7 +2,7 @@ package map;
 import java.util.*;
 
 // HashMap can be used in Multi threading Environment.
- class Map_HashMap {
+class Collection_HashMap {
 	public static void main(String[] args) {
 		HashMap hm1 = new HashMap();
 		hm1.put(null, null); // key=null, value=null is allowed in HashMap

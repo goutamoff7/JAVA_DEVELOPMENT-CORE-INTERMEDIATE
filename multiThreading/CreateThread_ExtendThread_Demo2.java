@@ -2,11 +2,6 @@ package multiThreading;
 
 import java.util.Scanner;
 
-class Demo
-{
-
-}
-//If we need to extend Demo class in this approach (extending Thread class) it will not be possible because in java multiple inheritance is not allowed (at a time we can't extends more than one class)
 class Calculator extends Thread
 {
     public void run()
@@ -50,10 +45,5 @@ public class CreateThread_ExtendThread_Demo2 {
         Message t2 = new Message();
         t1.start();
         t2.start();
-
-        //If we call run() method directly then the program will behave as a single threaded program because in this case Thread Controller doesn't has the control over those threads
-        // t1.run(); 
-        // t2.run();
-        
     }
 }

@@ -2,7 +2,7 @@ package map;
 import java.util.*;
 
 // LinkedLinkedHashMap can be used in Multi threading Environment.
-class Map_LinkedHashMap {
+class Collection_LinkedHashMap {
 	public static void main(String[] args) {
 		LinkedHashMap lhm1 = new LinkedHashMap();
 		lhm1.put(null, null); // key=null, value=null is allowed in LinkedHashMap

@@ -6,7 +6,7 @@ interface A {
 
 @FunctionalInterface
 interface B {
-	void m(int a);
+	int m(String a);
 }
 
 @FunctionalInterface
@@ -44,15 +44,19 @@ class LambdaExp_FunctionalInterface {
 		};
 		obA2.m();
 
-		B obB1 = (a) -> System.out.println("implements m() method of interface 'B' : "+a);
-		obB1.m(10);
-		B obB2 = x -> System.out.println("implements m() method of interface 'B' : "+x);
+		B obB1 = (a) -> {System.out.println("implements m() method of interface 'B' : "+a);return a.length();};
+		obB1.m("G");
+		B obB2 = x -> {System.out.println("implements m() method of interface 'B' : "+x);return x.length();};
 		// for single parameter parenthesis are optional
-		obB2.m(20);
+		obB2.m("D");
 
-		C obC = (x, y) -> System.out.println("implements m() method of interface 'C' "+x+" , "+y);
-		// for more than one parameter parenthesis are mandatory
-		obC.m(10, 20);
+		C obC1 = (x, y) -> System.out.println("implements m() method of interface 'C' "+x+" , "+y);
+		// for more than one parameter parenthesis are mandatory, data type are optional
+		obC1.m(10, 20);
+
+		C obC2 = (int x, int y) -> System.out.println("implements m() method of interface 'C' "+x+" , "+y);
+		// for more than one parameter parenthesis are mandatory, data type are optional
+		obC2.m(30, 40);
 
 	}
 }

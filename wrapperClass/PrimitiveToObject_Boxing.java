@@ -31,11 +31,10 @@ class PrimitiveToObject_Boxing
 
         //Type Mismatch : cannot convert from Integer to Long
         //Long L2 = Integer.valueOf(56); 
-    Long L2 =Long.valueOf(56); // It is possible as int 56 is up-casted to long
         
         //Type Mismatch : cannot convert from Long to Integer
         //Integer I2 = Long.valueOf(68L); 
-    Integer I3 = Integer.valueOf((int)68L); // long data need to downcast by programmer manually
+
         
     }
 }

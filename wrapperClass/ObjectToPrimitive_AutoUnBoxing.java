@@ -1,5 +1,7 @@
 package wrapperClass;
 
+import javax.crypto.interfaces.DHPrivateKey;
+
 class ObjectToPrimitive_AutoUnBoxing
 {
     public static void main(String[] args) {   
@@ -28,14 +30,13 @@ class ObjectToPrimitive_AutoUnBoxing
         System.out.println("Double object: "+d);
 
         //UpCasting must be done by compiler implicitly
-        long l2 = I;
-        System.out.println(l2); 
+        long l2 = I; 
         //Type Mismatch: cannot convert from Long to int 
         //int i2 = L;  
         // can't be solved using explicit typecasting also
         //but can be solved using L.intValue() method of Long class
-        int i2 = L.intValue();
-        System.out.println(i2);
+
+        System.out.println(l2);
 
 
 

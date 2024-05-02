@@ -36,15 +36,15 @@ class Collection_Generics_Declaration_Rules {
 
 		ArrayList<Integer> al = new ArrayList<Integer>(); // ArrayList with Integer class type
 		ArrayList<Integer> al1 = new ArrayList<>(); // Generics Class can be declared only in left side
-		ArrayList<> al2 = new ArrayList<String>(); // Generics Class can not be
+		//ArrayList<> al2 = new ArrayList<String>(); // Generics Class can not be
 		// declared only in right side
 		List<String> al3 = new ArrayList<>(); // reference variable
 		Collection<String> al4 = new ArrayList<>(); // can be of parent class
 		Iterable<String> al5 = new ArrayList<>(); // (Polymorphism concept)
 
-		List<int> al6 = new ArrayList<>(); // primitive data type not allowed
-		List<Integer> al7 = new ArrayList<String>(); // Generics class type mismatch
-		List<Object> al8 = new ArrayList<Integer>(); // Generics class type
+		//List<int> al6 = new ArrayList<>(); // primitive data type not allowed
+		// List<Integer> al7 = new ArrayList<String>(); // Generics class type mismatch
+		// List<Object> al8 = new ArrayList<Integer>(); // Generics class type
 		// mismatch
 
 		ArrayList<Student> al9 = new ArrayList<>(); // Generics of any User Defined Class are allowed
@@ -58,6 +58,7 @@ class Collection_Generics_Declaration_Rules {
 		System.out.println("Given Data : " + obj2.getObj());
 
 		List<Teacher> al10 = new ArrayList<>();
+
 
 	}
 }
