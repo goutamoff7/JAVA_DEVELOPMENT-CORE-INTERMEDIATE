@@ -1,6 +1,6 @@
 package inheritanceDemo;
 
-class Parent {
+class Parent_in {
 	int length, breadth;
 
 	int area(int length, int breadth) {
@@ -10,7 +10,7 @@ class Parent {
 	}
 }
 
-class Child extends Parent {
+class Child_in extends Parent_in {
 	int volume(int height) {
 		return length * breadth * height;
 	}
@@ -18,7 +18,7 @@ class Child extends Parent {
 
 public class SingleInheritance_AreaVolume {
 	public static void main(String[] args) {
-		Child c = new Child();
+		Child_in c = new Child_in();
 		int area = c.area(5, 6);
 		int volume = c.volume(3);
 		System.out.println("Area of the Rectangle = " + area + " Sqr mtr");

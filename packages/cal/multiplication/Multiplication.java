@@ -1,4 +1,4 @@
-package cal.multiplication;
+package packages.cal.multiplication;
 
 public class Multiplication {
     public void mul(int a, int b) {

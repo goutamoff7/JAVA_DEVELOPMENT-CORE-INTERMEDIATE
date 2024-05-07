@@ -1,20 +1,20 @@
 package inheritanceDemo;
 
-class A
+class A_in2
 {
     void msg()
     {
         System.out.println("Hello");
     }
 }
-class B
+class B_in2
 {
     void msg()
     {
         System.out.println("Welcome");
     }
 }
-class MultipleInheritance extends A,B
+class MultipleInheritance extends A_in2,B_in2 //Multiple Inheritance not allowed directly through classes
 {
         public static void main(String[] args)
         {

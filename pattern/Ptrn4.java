@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Ptrn4
 {
 	public static void main(String args[])
+	{
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the range: ");
 		int n=sc.nextInt();

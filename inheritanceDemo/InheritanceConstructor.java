@@ -1,26 +1,26 @@
 package inheritanceDemo;
 
-//make a parent class and initialize its variable using constructor, extends parent class in child class and also initialize its variable using constructor
-//make object of child and diplay all the data of parent and child.
+//make a ParentCon class and initialize its variable using constructor, extends ParentCon class in ChildCon class and also initialize its variable using constructor
+//make object of ChildCon and diplay all the data of ParentCon and ChildCon.
 import java.util.Scanner;
 
 
-class Parent
+class ParentCon
 {
     String name;
     int age;
-    Parent(String name,int age)
+    ParentCon(String name,int age)
     {
         this.name=name;
         this.age=age;
     }
 }
 
-class Child extends Parent
+class ChildCon extends ParentCon
 {
     int roll;
     float marks;
-    Child(String name, int age, int roll, float marks)
+    ChildCon(String name, int age, int roll, float marks)
     {
         super(name,age);
         this.roll=roll;
@@ -49,7 +49,7 @@ class InheritanceConstructor
     int roll=read.nextInt();
     System.out.print("Enter marks: ");
     float marks=read.nextFloat();
-    Child ob = new Child(name,age,roll,marks);
+    ChildCon ob = new ChildCon(name,age,roll,marks);
     ob.display();
 
     }

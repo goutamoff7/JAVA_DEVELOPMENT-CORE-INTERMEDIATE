@@ -3,7 +3,7 @@ package inheritanceDemo;
 //Single inheritance
 import java.util.Scanner;
 
-class A
+class A_in3
 {
 	int a,b;
 	Scanner read = new Scanner(System.in);
@@ -15,7 +15,7 @@ class A
 	}
 }
 
-class B extends A
+class B_in3 extends A_in3
 {
 	void findGreater()
 	{
@@ -26,7 +26,7 @@ class B extends A
 class SingleInheritanceExample
 {
 	public static void main(String[] args) {
-		B ob=new B();
+		B_in3 ob=new B_in3();
 		ob.enterValue();
 		ob.findGreater();
 	}

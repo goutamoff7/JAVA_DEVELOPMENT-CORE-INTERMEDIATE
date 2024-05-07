@@ -1,12 +1,12 @@
 package basic;
 
 import java.util.*;
-interface Abc
+interface Abc1
 {
 	int n=7;
       void prime();
 }
-class Prime1 implements Abc
+class Prime1 implements Abc1
 {
 		public void prime()
 		{

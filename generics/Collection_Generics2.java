@@ -1,12 +1,12 @@
 package generics;
 import java.util.*;
 
-class Student {
+class StudentGen2 {
 	String name;
 	int rno;
 }
 
-class Teacher {
+class TeacherGen2 {
 	String name;
 	int id;
 }
@@ -16,20 +16,20 @@ class Collection_Generics2 {
 		// No type safety
 		// List l = new ArrayList();
 
-		List<Student> al = new ArrayList<Student>(); // type safety exist
+		List<StudentGen2> al = new ArrayList<StudentGen2>(); // type safety exist
 
-		Student st1 = new Student();
-		Student st2 = new Student();
+		StudentGen2 st1 = new StudentGen2();
+		StudentGen2 st2 = new StudentGen2();
 
-		Teacher t1 = new Teacher();
-		Teacher t2 = new Teacher();
+		TeacherGen2 t1 = new TeacherGen2();
+		TeacherGen2 t2 = new TeacherGen2();
 
 		al.add(st1);
 		al.add(st2);
-		al.add(t1); // CE : is not applicable for the arguments (Teacher)
-		al.add(t2); // CE : is not applicable for the arguments (Teacher)
+		al.add(t1); // CE : is not applicable for the arguments (TeacherGen2)
+		al.add(t2); // CE : is not applicable for the arguments (TeacherGen2)
 
-		System.out.println("List of Students : " + al);
+		System.out.println("List of StudentGen2s : " + al);
 
 	}
 }

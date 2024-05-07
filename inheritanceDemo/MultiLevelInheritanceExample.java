@@ -3,7 +3,7 @@ package inheritanceDemo;
 //Multilevel Inheritance
 import java.util.Scanner;
 
-class A
+class A_in
 {
 	int a;
 	Scanner read = new Scanner(System.in);
@@ -14,7 +14,7 @@ class A
 	}
 }
 
-class B extends A
+class B_in extends A_in
 {
 	int b;
 	void enterValue_B()
@@ -23,7 +23,7 @@ class B extends A
 		b=read.nextInt();
 	}
 }
-class C extends B
+class C_in extends B_in
 {
 	void findGreater()
 	{
@@ -33,8 +33,8 @@ class C extends B
 
 class MultiLevelInheritanceExample
 {
-	public static void main(String[] args) {
-		C ob=new C();
+	public static void mA_in(String[] args) {
+		C_in ob=new C_in();
 		ob.enterValue_A();
 		ob.enterValue_B();
 		ob.findGreater();

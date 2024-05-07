@@ -1,16 +1,16 @@
 package interfaceDemo;
 @FunctionalInterface
-interface A {
+interface Aa {
 	void m();
 }
 
 @FunctionalInterface
-interface B {
+interface Bb {
 	int m(String a);
 }
 
 @FunctionalInterface
-interface C {
+interface Cc {
 	void m(int a, int b);
 }
 /*
@@ -35,26 +35,26 @@ class LambdaExp_FunctionalInterface {
 	public static void main(String[] args) {
 
 		// no Parameter requires parenthesis "()"
-		A obA1 = () -> System.out.println("implements m() method of interface 'A'");
+		Aa obA1 = () -> System.out.println("implements m() method of interface 'Aa'");
 		obA1.m();
-		A obA2 = () -> // multiple statement requires curly brace and semi colon "{ };"
+		Aa obA2 = () -> // multiple statement requires curly brace and semi colon "{ };"
 		{
-			System.out.println("implements m() method of interface 'A' 1st ");
-			System.out.println("implements m() method of interface 'A' 2nd ");
+			System.out.println("implements m() method of interface 'Aa' 1st ");
+			System.out.println("implements m() method of interface 'Aa' 2nd ");
 		};
 		obA2.m();
 
-		B obB1 = (a) -> {System.out.println("implements m() method of interface 'B' : "+a);return a.length();};
+		Bb obB1 = (a) -> {System.out.println("implements m() method of interface 'Bb' : "+a);return a.length();};
 		obB1.m("G");
-		B obB2 = x -> {System.out.println("implements m() method of interface 'B' : "+x);return x.length();};
+		Bb obB2 = x -> {System.out.println("implements m() method of interface 'Bb' : "+x);return x.length();};
 		// for single parameter parenthesis are optional
 		obB2.m("D");
 
-		C obC1 = (x, y) -> System.out.println("implements m() method of interface 'C' "+x+" , "+y);
+		Cc obC1 = (x, y) -> System.out.println("implements m() method of interface 'Cc' "+x+" , "+y);
 		// for more than one parameter parenthesis are mandatory, data type are optional
 		obC1.m(10, 20);
 
-		C obC2 = (int x, int y) -> System.out.println("implements m() method of interface 'C' "+x+" , "+y);
+		Cc obC2 = (int x, int y) -> System.out.println("implements m() method of interface 'Cc' "+x+" , "+y);
 		// for more than one parameter parenthesis are mandatory, data type are optional
 		obC2.m(30, 40);
 

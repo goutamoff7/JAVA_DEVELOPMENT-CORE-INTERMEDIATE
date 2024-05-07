@@ -1,5 +1,5 @@
 package methodOverloading;
-class Test 
+class Test1
 {
 
 public void m1(int i)
@@ -20,7 +20,7 @@ class MethodOverloadingTest1{
 
 public static void main(String[] args) {
 
-Test t = new Test();
+Test1 t = new Test1();
 
 t.m1(10);//int arg method
 

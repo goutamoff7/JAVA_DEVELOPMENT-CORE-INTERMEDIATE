@@ -1,7 +1,7 @@
 package interfaceDemo;
 
 @FunctionalInterface
-interface A {
+interface A1 {
 	// void m();
 	void m1();
 
@@ -14,7 +14,7 @@ interface A {
 	}
 }
 
-class Child implements A {
+class Child1 implements A1 {
 	public void m1() {
 		System.out.println("m1-child-Implements");
 	}
@@ -23,9 +23,9 @@ class Child implements A {
 
 public class Functional_Interface {
 	public static void main(String[] args) {
-		A ob = new Child();
+		A1 ob = new Child1();
 		ob.m1();
 		ob.m2();
-		A.m3();
+		A1.m3();
 	}
 }

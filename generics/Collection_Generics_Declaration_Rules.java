@@ -1,11 +1,11 @@
 package generics;
 import java.util.*;
 
-class Student {
+class StudentGen {
 
 }
 
-class Teacher<T> // UDF class with generics 
+class TeacherGen<T> // UDF class with generics 
 // E - Element (used extensively by the Java Collections Framework)
 // K - Key
 // N - Number
@@ -15,7 +15,7 @@ class Teacher<T> // UDF class with generics
 {
 	T obj;  
 
-	public Teacher(T obj) // constructor which accepts any type of Object
+	public TeacherGen(T obj) // constructor which accepts any type of Object
 	{
 		this.obj = obj;
 	}
@@ -47,17 +47,17 @@ class Collection_Generics_Declaration_Rules {
 		// List<Object> al8 = new ArrayList<Integer>(); // Generics class type
 		// mismatch
 
-		ArrayList<Student> al9 = new ArrayList<>(); // Generics of any User Defined Class are allowed
+		ArrayList<StudentGen> al9 = new ArrayList<>(); // Generics of any User Defined Class are allowed
 
-		Teacher<String> obj1 = new Teacher<String>("Goutam");
+		TeacherGen<String> obj1 = new TeacherGen<String>("Goutam");
 		obj1.disp();
 		System.out.println("Given Data : " + obj1.getObj());
 
-		Teacher<Integer> obj2 = new Teacher<Integer> (10);
+		TeacherGen<Integer> obj2 = new TeacherGen<Integer> (10);
 		obj2.disp();
 		System.out.println("Given Data : " + obj2.getObj());
 
-		List<Teacher> al10 = new ArrayList<>();
+		List<TeacherGen> al10 = new ArrayList<>();
 
 
 	}

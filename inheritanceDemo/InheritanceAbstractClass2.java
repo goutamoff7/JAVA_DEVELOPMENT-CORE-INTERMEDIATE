@@ -1,22 +1,22 @@
 package inheritanceDemo;
 
-//make an abstract parent class and extends parent class in child class and initialize its variable using constructor
-//make object of child class diplay all the data of parent and child. (parent class variable should get value without using parent constructor)
+//make an abstract ParentIn2 class and extends ParentIn2 class in child class and initialize its variable using constructor
+//make object of child class diplay all the data of ParentIn2 and child. (ParentIn2 class variable should get value without using ParentIn2 constructor)
 import java.util.Scanner;
 
 
 
-abstract class Parent
+abstract class ParentIn2
 {
     String name;
     int age;
 }
 
-class Student extends Parent
+class StudentIn2 extends ParentIn2
 {
     int roll,marks;
     String subject;
-    Student(int roll, String subject,int marks)
+    StudentIn2(int roll, String subject,int marks)
     {
         this.roll=roll;
         this.subject=subject;
@@ -24,7 +24,7 @@ class Student extends Parent
     }
     void display()
     {
-    System.out.println("\nStudent's Data: ");
+    System.out.println("\nStudentIn2's Data: ");
     System.out.println("Name: "+name);
     System.out.println("Age :"+age);
     System.out.println("Roll :"+roll);
@@ -50,7 +50,7 @@ class InheritanceAbstractClass2
     String subject=read.nextLine();
     System.out.print("Enter marks: ");
     int marks=read.nextInt();
-    Student ob = new Student(roll,subject,marks);
+    StudentIn2 ob = new StudentIn2(roll,subject,marks);
     ob.name=name;
     ob.age=age;	
     ob.display();

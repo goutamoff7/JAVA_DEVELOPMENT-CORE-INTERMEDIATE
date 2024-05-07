@@ -1,13 +1,13 @@
 package interfaceDemo;
-interface A {
+interface A2 {
 	void m();
 }
 
-interface B {
+interface B2 {
 	void m();
 }
 
-class Child implements A, B {
+class Child2 implements A2, B2 {
 	public void m() {
 		System.out.println("child implements method m of A & B");
 	}
@@ -19,11 +19,11 @@ class Child implements A, B {
 
 class Interface_MethodNamingConflict_case1 {
 	public static void main(String[] args) {
-		A ob1 = new Child();
+		A2 ob1 = new Child2();
 		ob1.m();
-		B ob2 = new Child();
+		B2 ob2 = new Child2();
 		ob2.m();
-		Child ob3 = new Child();
+		Child2 ob3 = new Child2();
 		ob3.m();
 	}
 }
