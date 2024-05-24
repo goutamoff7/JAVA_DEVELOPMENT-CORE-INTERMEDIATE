@@ -5,6 +5,7 @@ class Mat_mul
 	public static void main(String a[])
 	{
 		int sum=0,i,j,k;
+
 		System.out.println("Enter the size of array: ");
 		Scanner read=new Scanner(System.in);
 		int size=read.nextInt();

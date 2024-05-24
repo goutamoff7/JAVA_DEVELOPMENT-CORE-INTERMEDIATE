@@ -40,9 +40,9 @@ public class FactoryDesignPattern {
 	public static void main(String[] args) {
 		GreetingServiceFactory gsf = new GreetingServiceFactory();
 		GreetingService gs = gsf.getGreetingService("English");
-		gs.greet("Goutam");
+			gs.greet("Goutam");
 		gs = gsf.getGreetingService("french");
-		gs.greet("Goutam");
+			gs.greet("Goutam");
 
 	}
 
