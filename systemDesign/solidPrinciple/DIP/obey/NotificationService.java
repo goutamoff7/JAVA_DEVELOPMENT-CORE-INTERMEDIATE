@@ -34,7 +34,7 @@ class SMSService implements MessageService
         System.out.println("SMS Sent "+message);
     }
 }
-class WhatAppService implements MessageService
+class WhatsAppService implements MessageService
 {
     @Override
     public void sendMessage(String message)

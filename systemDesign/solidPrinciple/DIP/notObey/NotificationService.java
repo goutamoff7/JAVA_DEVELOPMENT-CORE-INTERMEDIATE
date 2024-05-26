@@ -6,7 +6,7 @@ class NotificationService
     EmailService emailService;// Higher level NotificationService depends
     SMSService smsService; // on lower level EmailService and SMSService
 
-    public NotificationService(SMSService smsService) {
+    public NotificationService() {
         this.smsService = new SMSService();
         this.emailService= new EmailService();
     }
