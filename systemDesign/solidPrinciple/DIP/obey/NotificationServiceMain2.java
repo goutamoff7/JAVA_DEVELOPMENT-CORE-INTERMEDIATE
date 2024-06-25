@@ -6,13 +6,7 @@ interface MessageService
 }
 class NotificationService
 {
-    private MessageService messageService;
-    public NotificationService(MessageService messageService)
-    {
-        this.messageService=messageService;
-    }
-
-    void sendNotification(String message)
+    void sendNotification(MessageService messageService,String message)
     {
         messageService.sendMessage(message);
     }
@@ -40,5 +34,19 @@ class WhatsAppService implements MessageService
     public void sendMessage(String message)
     {
         System.out.println("WhatsApp Sent "+message);
+    }
+}
+
+class NotificationServiceMain2
+{
+    public static void main(String[] args) {
+        EmailService es = new EmailService();
+        SMSService sms = new SMSService();
+        WhatsAppService was = new WhatsAppService();
+
+        NotificationService ns = new NotificationService();
+        ns.sendNotification(es,"Hello Goutam");
+        ns.sendNotification(sms,"Hello Goutam");
+        ns.sendNotification(was,"Hello Goutam");
     }
 }
