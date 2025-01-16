@@ -91,7 +91,7 @@ public class TerminalOps {
                 .toList();
         System.out.println(list1);
 
-        // 9. forEachOrdered() --> used for parallel stream
+        // 9. forEachOrdered() --> used for parallel stream to maintain the order
         List<Integer> list3 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         System.out.println("forEach() with parallel stream : ");
         list3.parallelStream().forEach(System.out::println);
