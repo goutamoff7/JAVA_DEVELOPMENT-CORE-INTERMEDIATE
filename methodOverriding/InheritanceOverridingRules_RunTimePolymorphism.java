@@ -66,8 +66,8 @@ public class InheritanceOverridingRules_RunTimePolymorphism {
 	public static void main(String[] args) {
 		Tiger t = new Tiger(); // Child class reference manages child class object
 		Animal a = new Tiger(); // Parent class reference manages child class object
-		a.run();
-		t.run();
+		Animal.run();
+		Tiger.run();
 		a.eat();
 		t.eat();
 		// a.age();//specialized method of child class can't call using parent class
@@ -82,15 +82,11 @@ public class InheritanceOverridingRules_RunTimePolymorphism {
 		t.age(5);
 
 		// a.sleep();t.sleep(); //super class method with private specifier
-		// can't participate in inheritance otherwise it violets encapsulation rules.
+		// can't participate in inheritance otherwise it violates encapsulation rules.
 		// The method sleep() from the type Animal is not visible
 
 		a.shelter();
 		t.shelter(); // Cannot override the super class final method so
 		// super class method has been invoked
-	}
-
-	private static Tiger Tiger(Animal a) {
-		return null;
 	}
 }

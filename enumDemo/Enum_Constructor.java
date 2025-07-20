@@ -10,6 +10,8 @@ class Enum_Constructor
             private int angle;
 
             //Constructor
+            // The Java compiler implicitly adds private to all enum constructors,
+            // regardless of what we specify (even if we don’t write any access modifier).
             Direction()
             {
                 System.out.println("Moving towards "+this+" direction");

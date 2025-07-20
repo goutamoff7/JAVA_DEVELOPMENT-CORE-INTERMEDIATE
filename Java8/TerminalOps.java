@@ -2,13 +2,15 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.toList;
+
 public class TerminalOps {
     public static void main(String[] args) {
 
         List<Integer> list = Arrays.asList(1, 2, 3);
 
         // 1. collect()
-        list.stream().collect(Collectors.toList());
+        list.stream().collect(toList());
         list.stream().toList();
 
         // 2. forEach()
@@ -122,7 +124,14 @@ public class TerminalOps {
 //     List<String> list2 = stream.map(String::toUpperCase).toList();
         // Exception: stream has already been operated
 
-
+        // Question 4: list of cubes from 1 to 30
+        Stream.iterate(1, x -> x + 1)
+                .limit(30)
+                .map(x -> {
+                    int y=x*x*x;
+                    System.out.println(x+"^3="+y);
+                    return y;
+                }).toList();
 
     }
 }

@@ -10,12 +10,25 @@ class Enum_Demo {
    } 
 
 //behind the scene : 
-/*public final class Direction extends java.lang.Enum
-*{
-*   public static final Direction EAST = new Direction();
-*   public static final Direction WEST = new Direction();
-*   public static final Direction NORTH = new Direction();
-*   public static final Direction SOUTH = new Direction();
+/*
+final class Direction extends java.lang.Enum<Direction> {
+    public static final Direction NORTH = new Direction("NORTH", 0);
+    public static final Direction SOUTH = new Direction("SOUTH", 1);
+    public static final Direction EAST = new Direction("EAST", 2);
+    public static final Direction WEST = new Direction("WEST", 3);
+
+    private Direction(String name, int ordinal) {
+        super(name, ordinal);
+    }
+
+    public static Direction[] values() {
+        return new Direction[] { NORTH, SOUTH, EAST, WEST };
+    }
+
+    public static Direction valueOf(String name) {
+        // returns the constant with the given name
+    }
+}
 }*/
    public static void main(String[] args) {
     

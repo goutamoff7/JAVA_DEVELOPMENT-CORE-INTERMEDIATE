@@ -1,9 +1,9 @@
 package interfaceDemo;
 interface Calculator
-{
-    default void add()
+{    
+    static  void add()
     {
-        printInfo();
+        
         System.out.println(10+20);
     }
 
@@ -41,7 +41,7 @@ public class PrivateInterfaceMethods
 {
     public static void main(String[] args) {
         Casio cs = new Casio();
-        cs.add();
+        Calculator.add();
         cs.sub();
         cs.mul();
         cs.div();

@@ -1,8 +1,36 @@
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.function.*;
+
+class MobilePhone{
+    String name;
+    MobilePhone(String name){
+        this.name=name;
+    }
+
+    @Override
+    public String toString() {
+        return "MobilePhone{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
+
+//    class Task implements Runnable{
+//
+//        @Override
+//        public void run() {
+//            System.out.println("Hello");
+//        }
+//    }
+
+@FunctionalInterface
+interface MathOperation {
+    int operate(int a, int b);
+}
 
 public class Java8_Demo2 {
     public static void main(String[] args) {
@@ -60,8 +88,8 @@ public class Java8_Demo2 {
 //            Function<T, R> firstFunction
 //            Function<R, U> secondFunction
 //            Function<T, U> combined = firstFunction.andThen(secondFunction);
-//            compose: The second function's output must match the first function's input.
 //
+//            compose: The second function's output must match the first function's input.//
 //            Function<V, T> secondFunction
 //            Function<T, R> firstFunction
 //            Function<V, R> combined = firstFunction.compose(secondFunction);`
@@ -111,10 +139,12 @@ public class Java8_Demo2 {
         Consumer<Integer> consumer = x -> System.out.println("Consumer Accepts " + x);
 
 //        if supplied value is even then consumer will accept the double of the supplied value
-        if (checkEven.test(supplier.get()))
-            consumer.accept(makeDouble.apply(supplier.get()));
+        int value =supplier.get();
+        System.out.println("Supplied Value = "+value);
+        if (checkEven.test(value))
+            consumer.accept(makeDouble.apply(value));
         else
-            System.out.println("Consumer will not accept " + supplier.get());
+            System.out.println("Consumer will not accept " + value);
 
 //        BiPredicate, BiFunction, BiConsumer
 
@@ -158,29 +188,4 @@ public class Java8_Demo2 {
     }
 }
 
-class MobilePhone{
-    String name;
-    MobilePhone(String name){
-        this.name=name;
-    }
 
-    @Override
-    public String toString() {
-        return "MobilePhone{" +
-                "name='" + name + '\'' +
-                '}';
-    }
-}
-
-//    class Task implements Runnable{
-//
-//        @Override
-//        public void run() {
-//            System.out.println("Hello");
-//        }
-//    }
-
-@FunctionalInterface
-interface MathOperation {
-    int operate(int a, int b);
-}
