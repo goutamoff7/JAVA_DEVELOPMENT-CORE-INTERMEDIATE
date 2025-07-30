@@ -1,14 +1,14 @@
 package comparatorComparable;
 import java.util.*;
 
-class Student
+class Student1
 {
     String name;
     byte age;
     int marks;
     
 
-    Student(String name,byte age,int marks)
+    Student1(String name,byte age,int marks)
     {
         this.name=name;
         this.marks=marks;
@@ -23,11 +23,11 @@ class Student
 
 public class Comparator_Implementation_Lambda_Exp {
     public static void main(String[] args) {
-        Student st1 = new Student("Goutam",(byte)26,78);
-        Student st2 = new Student("Ram",(byte)23,80);
-        Student st3 = new Student("Varun",(byte)28,56);
+        Student1 st1 = new Student1("Goutam",(byte)26,78);
+        Student1 st2 = new Student1("Ram",(byte)23,80);
+        Student1 st3 = new Student1("Varun",(byte)28,56);
 
-        List<Student> al= new ArrayList<>();
+        List<Student1> al= new ArrayList<>();
         al.add(st1);
         al.add(st2);
         al.add(st3);
@@ -35,7 +35,7 @@ public class Comparator_Implementation_Lambda_Exp {
         //Collections.sort(al);// CE arise, multiple type of data is there in the list, according to which data need to be sort?
 
         //Separate Lambda Expression used
-        Comparator<Student> m =(Student a,Student b)->
+        Comparator<Student1> m =(Student1 a,Student1 b)->
         {
                 if(a.marks>b.marks)  // Sorting based on marks
                     return 1; // 1 means Swapping
@@ -47,15 +47,7 @@ public class Comparator_Implementation_Lambda_Exp {
         
         
         // Lambda expression used as a parameter of sort method
-        Collections.sort(al,(A,B)->
-        
-            {
-                if(A.age>B.age)  // Sorting based on marks
-                    return 1; // 1 means Swapping
-                else
-                    return -1; //-1 means not Swapping 
-            }
-        );
+        Collections.sort(al,(A,B)-> A.age>B.age ? 1 : -1);
         System.out.println("Sorting based on Age : \n"+al);  
         
     }

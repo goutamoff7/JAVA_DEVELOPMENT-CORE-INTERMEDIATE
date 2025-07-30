@@ -15,7 +15,7 @@ public class WildcardDemo {
         int sum = 0;
         for (Number number : list)
             sum += number.intValue();
-        Number num = list.get(0);
+        Number num = list.getFirst();
         list.add(null); // Allowed because null is a valid reference
 //        list.add(5); // Compilation error: Cannot add because of unknown subtype
 //        List<? extends Number> means that list can hold any subtype of
@@ -49,8 +49,7 @@ public class WildcardDemo {
 
 /*Conclusion :
 
-Wildcard ? extends T allows reading (get() works) but prevents writing (add()
-fails except null).
+Wildcard ? extends T allows reading (get() works) but prevents writing (add() fails except null).
 
 Wildcard ? super T allows writing (add() works for T or subclasses) but makes get() unsafe.
 */

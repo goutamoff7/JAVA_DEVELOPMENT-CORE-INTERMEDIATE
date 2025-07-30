@@ -1,14 +1,14 @@
 package comparatorComparable;
 import java.util.*;
 
-class Student
+class Student2
 {
     String name;
     byte age;
     int marks;
     
 
-    Student(String name,byte age,int marks)
+    Student2(String name, byte age, int marks)
     {
         this.name=name;
         this.marks=marks;
@@ -23,20 +23,20 @@ class Student
 
 public class Comparator_Implementation_Annonymous_InnerClass {
     public static void main(String[] args) {
-        Student st1 = new Student("Goutam",(byte)26,78);
-        Student st2 = new Student("Ram",(byte)23,80);
-        Student st3 = new Student("Varun",(byte)28,56);
+        Student2 st1 = new Student2("Goutam",(byte)26,78);
+        Student2 st2 = new Student2("Ram",(byte)23,80);
+        Student2 st3 = new Student2("Varun",(byte)28,56);
 
-        List<Student> al= new ArrayList<>();
+        List<Student2> al= new ArrayList<>();
         al.add(st1);
         al.add(st2);
         al.add(st3);
         System.out.println(al);
         //Collections.sort(al);// CE arise, multiple type of data is there in the list, according to which data need to be sort?
 
-        Comparator<Student> m =new Comparator<Student>()
+        Comparator<Student2> m =new Comparator<Student2>()
         {
-            public int compare(Student a,Student b)
+            public int compare(Student2 a, Student2 b)
             {
                 if(a.marks>b.marks)  // Sorting based on marks
                     return 1; // 1 means Swapping
@@ -48,9 +48,9 @@ public class Comparator_Implementation_Annonymous_InnerClass {
         System.out.println("Sorting based on Marks  : \n"+al);        
         
 
-        Comparator<Student> a =new Comparator<Student>()
+        Comparator<Student2> a =new Comparator<Student2>()
         {
-            public int compare(Student a,Student b)
+            public int compare(Student2 a, Student2 b)
             {
                 if(a.age>b.age)  // Sorting based on marks
                     return 1; // 1 means Swapping

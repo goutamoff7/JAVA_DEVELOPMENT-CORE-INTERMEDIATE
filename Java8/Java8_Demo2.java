@@ -148,17 +148,17 @@ public class Java8_Demo2 {
 
 //        BiPredicate, BiFunction, BiConsumer
 
-        BiPredicate<Integer, Integer> isSumEven = (x, y) -> (x + y) % 2 == 0;
-        System.out.println(isSumEven.test(2, 5));
+        BiPredicate<Integer, Double> isSumEven = (x, y) -> (x + y) % 2 == 0;
+        System.out.println(isSumEven.test(2, 5.0));
 
-        BiFunction<Integer, Integer, Double> average = (x, y) -> (double) (x + y) / 2;
-        System.out.println(average.apply(2, 5));
+        BiFunction<Integer, Float, Double> average = (x, y) -> (double) (x + y) / 2;
+        System.out.println(average.apply(2, 5.0f));
 
-        BiConsumer<Integer, Integer> consume = (x, y) -> {
+        BiConsumer<Integer, Double> consume = (x, y) -> {
             System.out.println(x);
             System.out.println(y);
         };
-        consume.accept(5,2);
+        consume.accept(5,2.0);
 
         //    UnaryOperator --> extends Function, used When type of input and type of result are same
         UnaryOperator<Integer> fun1 = x->x*2;

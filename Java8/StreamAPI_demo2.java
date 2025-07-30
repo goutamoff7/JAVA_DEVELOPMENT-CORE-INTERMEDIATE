@@ -1,6 +1,7 @@
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Stream;
 
 public class StreamAPI_demo2 {
@@ -44,7 +45,7 @@ public class StreamAPI_demo2 {
         // 3. Using Stream.of()
         Stream<String> ram = Stream.of("Ram","Shyam");
         // 4. Infinite Stream
-        Stream<Integer> generate = Stream.generate(() -> 1).limit(100);
+        Stream<Integer> generate = Stream.generate(() -> new Random().nextInt(50)).limit(100);
         generate.forEach(System.out::println);
 
         Stream<Integer> iterate = Stream.iterate(2,x -> x + 1).limit(200);
