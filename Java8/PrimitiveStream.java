@@ -1,8 +1,7 @@
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class PrimitiveStream {
     public static void main(String[] args) {
@@ -53,5 +52,18 @@ public class PrimitiveStream {
         System.out.println("Sum : " + stats.getSum());
         System.out.println("Max : " + stats.getMax());
         System.out.println("Min : " + stats.getMin());
+
+        // summaryStatistics() can be called by IntStream, LongStream, DoubleStream etc.
+        // so Streams need to convert to IntStream, LongStream, DoubleStream etc. by using
+        // mapToInt, mapToLong, mapToDouble etc.
+        DoubleStream mapToDoubleStream = Stream.of(1, 2, 3, 4, 5).mapToDouble(x -> x);
+        DoubleSummaryStatistics stats2 = mapToDoubleStream.summaryStatistics();
+        System.out.println(stats);
+        System.out.println("Count : " + stats2.getCount());
+        System.out.println("Average : " + stats2.getAverage());
+        System.out.println("Sum : " + stats2.getSum());
+        System.out.println("Max : " + stats2.getMax());
+        System.out.println("Min : " + stats2.getMin());
+
     }
 }
